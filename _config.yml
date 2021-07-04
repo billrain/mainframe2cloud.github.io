@@ -19,7 +19,7 @@ plugins:
   - jekyll-seo-tag
 
 authors:
-    sal:
+    ming:
       name:           ming
       site:           https://www.mainframe2cloud.com
       avatar:         /assets/images/avatar1.jpg
