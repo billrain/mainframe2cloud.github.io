@@ -44,7 +44,7 @@ defaults:
     values:
       layout: post
       author: ming
-      avatar: /assets/images/avatar1.jpg
+      avatar: {{site.baseurl}}/assets/images/avatar1.jpg
 
   # all pages
   - scope:
