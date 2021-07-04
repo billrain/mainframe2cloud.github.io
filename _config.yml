@@ -22,7 +22,7 @@ authors:
     ming:
       name:           ming
       site:           https://www.mainframe2cloud.com
-      avatar:         {{site.baseurl}}/assets/images/avatar1.jpg
+      avatar:         /assets/images/avatar1.jpg
       bio:            "Hi, This is Ming."
       email:          mainframe2cloud@gmail.com
       twitter:        https://twitter.com/billrain
