@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Welcome to Mainframe to Cloud!"
+categories: [ Admin ]
+image: assets/images/demo1.jpg
+---
+This site focus on Mainframe and Cloud technologies, and migration strategy from Mainframe to Cloud like AWS, Azure.
