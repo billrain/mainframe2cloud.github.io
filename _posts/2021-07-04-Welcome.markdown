@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Mainframe to Cloud!"
+author: ming
 categories: [ Admin ]
 image: assets/images/demo1.jpg
 ---
