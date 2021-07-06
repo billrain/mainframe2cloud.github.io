@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Mainframe to Cloud!"
 author: ming
 categories: [ Admin ]
-image: assets/images/demo1.jpg
+image: https://commons.wikimedia.org/wiki/File:IBM_System360_Mainframe.jpg
 ---
 
 > Domains under heaven,
@@ -20,4 +20,4 @@ Welcome to Mainframe to Cloud. We cover technology, engineering, architecture, s
 
 Since Mainframe was invented by IBM on April 1967, it has been the backbone for mission critical services for over 50 years and dominated commercial centralised computing for decades. Many Fortune 500 companies especially financial organisations run their core business on mainframes since the 60s and 70s.
 Although Mainframe has been evolving itself all the way, and begins to support many modern development techs like Node.JS, GO, Python, the long turn around cycle of the legacy system/process running on mainframe platform rather mainframe itself, has made its customers to choose the 'modern' platform of cloud computing.
-After Amazon commercialised its cloud hosting services in 2006, IBM who invented mainframe quickly followed up to layout and promote cloud computing as early as 2007, when people seldom heard of AWS, Azure and GCP.  After almost 10 years of development, cloud platform has become the first choice of new IT infrasturce setup and many existing mainframe customers are planning to migrate to cloud. Centralised to decentralised and vice versa, is just like waves and tides in the history of computing. Around 2017, AWS has launched its campaign strategically to win customers to migrate from mainframe to AWS. And today, AWS has highly competitive solution portfolio to help customers re-host their legacy applications, together with a full range of service partner network. 
+After Amazon commercialised its cloud hosting services in 2006, IBM who invented mainframe quickly followed up to layout and promote cloud computing as early as 2007, when people seldom heard of AWS, Azure and GCP.  After almost 10 years of development, cloud platform has become the first choice of new IT infrasturce setup and many existing mainframe customers are planning to migrate to cloud. Centralised to decentralised and vice versa, is just like waves and tides in the history of computing. Around 2017, AWS has launched its campaign strategically to win customers to migrate from mainframe to AWS. And today, AWS has highly competitive solution portfolio to help customers re-host their legacy applications, together with a full range of service partner network.
