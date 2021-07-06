@@ -5,4 +5,19 @@ author: ming
 categories: [ Admin ]
 image: assets/images/demo1.jpg
 ---
-This site focus on Mainframe and Cloud technologies, and migration strategy from Mainframe to Cloud like AWS, Azure.
+
+> Domains under heaven,
+after a long period of division, tends to unite;
+after a long period of union, tends to divide.
+-- Romance of Three Kingdoms
+天下大事
+分久必合
+合久必分
+-- 三国演义
+>
+
+Welcome to Mainframe to Cloud. We cover technology, engineering, architecture, solution and migration from Mainframe to Cloud.
+
+Since Mainframe was invented by IBM on April 1967, it has been the backbone for mission critical services for over 50 years and dominated commercial central computing for decades. Many Fortune 500 companies especially financial organisations run their core business on mainframes since the 60s and 70s.
+Although Mainframe has been evolving itself all the way, and begins to support many modern development techs like Node.JS, GO, Python, the long turn around cycle of the legacy system/process running on mainframe platform rather mainframe itself, has made its customers to choose the 'modern' platform of cloud computing.
+After Amazon commercialised its cloud hosting services in 2006, IBM who invented mainframe quickly followed up to layout and promote cloud computing as early as 2007, when people seldom heard of AWS, Azure and GCP.  
