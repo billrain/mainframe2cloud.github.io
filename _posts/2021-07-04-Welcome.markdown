@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Mainframe to Cloud!"
 author: ming
 categories: [ Admin ]
-image: ![](https://commons.wikimedia.org/wiki/File:IBM_System360_Mainframe.jpg)
+image: assets/images/IBM_System360_Mainframe.jpg
 ---
 
 > Domains under heaven,
