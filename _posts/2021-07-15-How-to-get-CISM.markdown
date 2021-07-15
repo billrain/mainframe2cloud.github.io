@@ -3,7 +3,7 @@ layout: post
 title:  "如何考取CISM"
 author: ming
 categories: [ Cyber ]
-image: ![](https://www.testpreptraining.com/blog/wp-content/uploads/2020/01/How-to-passquerying-data-with-transact-SQL-70-761-5.png)
+image: https://www.testpreptraining.com/blog/wp-content/uploads/2020/01/How-to-passquerying-data-with-transact-SQL-70-761-5.png
 ---
 随着互联网的普及，企业系统与外部网络的交互访问激增。信息系统本身的复杂性对信息安全构建造成巨大的挑战。近年来，随着网络攻击愈发猖獗和种类纷繁的系统漏洞，各企业安全事故频发，从业人士和企业领导对信息安全的重视与日俱增，很多企业和政府都纷纷成立专职的信息安全部门和反网络攻击部队。信息安全（Cybersecurity）作为同大数据，物联网，人工智能一波兴起的信息科技概念，已经完成了其从0-1的奠基阶段，走向1-100的成熟发展时期。因此在工作市场上，信息安全相关的职位是日益旺盛，具有熟练技能的从业人员数量相对较少，具有国际认证的专业安全经理则可以在企业中担任首席信息安全官（CISO）的角色，为企业信息安全保驾护航，责任重大。
 国际上通用的信息安全相关认证有ISACA（信息系统审计和控制协会）颁发的CISA（审计方向），CISM（管理方向），另外著名的认证还有(ISC)²颁发的CISSP（实操方向）。
