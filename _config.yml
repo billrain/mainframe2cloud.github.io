@@ -19,13 +19,13 @@ plugins:
   - jekyll-seo-tag
 
 authors:
-    ming:
-      name:           ming
+    Ming:
+      name:           Ming
       site:           https://www.mainframe2cloud.com
       avatar:         /assets/images/avatar1.jpg
       bio:            "Hi, This is Ming."
       email:          mainframe2cloud@gmail.com
-      twitter:        https://twitter.com/billrain
+      twitter:        https://www.linkedin.com/in/billrain/
 
 #    jane:
 #      name:           Jane
@@ -43,7 +43,7 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: ming
+      author: Ming
       avatar: /assets/images/avatar1.jpg
 
   # all pages
