@@ -44,4 +44,4 @@ ISACA题目的设计可以说是比较狡猾的，很多题目都是考察哪一
 通过考试只是认证符合ISACA的方法论，在实际工作环境中，根据客观条件和场景的不同，并不一定要按照考试答案来执行，重要的还是根据企业的自身条件和当地的监管要求来量体裁衣，建立企业自己的安全体系和准则。
 
 希望这篇文章能够让你对CISM和它的认证考试有简单的了解，也希望准备考试的同学们取得好成绩。
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="1f24a0b0-cf10-47d6-a027-ce33aa44d3d3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<div data-iframe-width="600" data-iframe-height="480" data-share-badge-id="1f24a0b0-cf10-47d6-a027-ce33aa44d3d3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
