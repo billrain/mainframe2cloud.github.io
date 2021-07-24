@@ -39,11 +39,11 @@ CISM考试的难度和强度还是较高的，没有经过系统的学习和备�
 
 一些考试的要点，可以参考我绘制的思维导图。
 
-<iframe width="600" height="400" frameborder="0" src="https://www.mindmeister.com/maps/public_map_shell/1819967279/cism?width=600&height=400&z=auto&t=Lf6QYr7JCX&live_update=1" scrolling="no" style="overflow: hidden; margin-bottom: 5px;">您目前的浏览器无法显示框架元素。请访问MindMeister上的<a href="https://www.mindmeister.com/1819967279/cism?t=Lf6QYr7JCX" target="_blank">CISM</a>页面。</iframe><div class="mb-5"><a href="https://www.mindmeister.com/1819967279/cism?t=Lf6QYr7JCX" target="_blank">CISM</a> 作者 <a href="https://www.mindmeister.com/users/channel/214244" target="_blank">Ming</a></div>
+<iframe width="800" height="600" frameborder="0" src="https://www.mindmeister.com/maps/public_map_shell/1819967279/cism?width=800&height=600&z=auto&t=Lf6QYr7JCX&live_update=1" scrolling="no" style="overflow: hidden; margin-bottom: 5px;">您目前的浏览器无法显示框架元素。请访问MindMeister上的<a href="https://www.mindmeister.com/1819967279/cism?t=Lf6QYr7JCX" target="_blank">CISM</a>页面。</iframe><div class="mb-5"><a href="https://www.mindmeister.com/1819967279/cism?t=Lf6QYr7JCX" target="_blank">CISM</a> 作者 <a href="https://www.mindmeister.com/users/channel/214244" target="_blank">Ming</a></div>
 
 
 ISACA题目的设计可以说是比较狡猾的，很多题目都是考察哪一个是最优或最接近或最先要做的， 往往会伴随1-2个同样符合题目要求但不是最优的答案，以达到机构输出其价值观和思维体系的目的。比如在数据中心发生灾难事件时，安全经理最首要保障的是数据安全还是人员安全？ISACA的答案是人。其实在企业管理三要素的人，流程和系统（科技）之中，最脆弱的环节和最决定性和最有潜力发展的永远是人。
 通过考试只是认证符合ISACA的方法论，在实际工作环境中，根据客观条件和场景的不同，并不一定要按照考试答案来执行，重要的还是根据企业的自身条件和当地的监管要求来量体裁衣，建立企业自己的安全体系和准则。
 
 希望这篇文章能够让你对CISM和它的认证考试有简单的了解，也希望准备考试的同学们取得好成绩。
-<div data-iframe-width="600" data-iframe-height="480" data-share-badge-id="1f24a0b0-cf10-47d6-a027-ce33aa44d3d3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<div data-iframe-width="800" data-iframe-height="600" data-share-badge-id="1f24a0b0-cf10-47d6-a027-ce33aa44d3d3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
