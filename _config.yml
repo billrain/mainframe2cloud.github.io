@@ -31,9 +31,9 @@ authors:
       name:           R
       site:           https://www.mainframe2cloud.com
       avatar:         /assets/images/avatar2.jpg
-       bio:            "test"
-       email:          test@gmail.com
-       twitter:
+      bio:            "test"
+      email:          test@gmail.com
+      twitter:        https://www.linkedin.com/in/billrain/
 
 # Defaults
 defaults:
