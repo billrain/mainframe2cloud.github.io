@@ -30,3 +30,5 @@ CISM考试的难度和强度还是较高的，没有经过系统的学习和备�
 ![]({{ site.baseurl }}/assets/images/2021/study4.png)
 无论哪种模式，都可以把自己做错的题或者划重点的放入书签，再做完全部题目之后就可以进行重点复习，甚至可以根据题目的难度进行选择。
 ![]({{ site.baseurl }}/assets/images/2021/study5.png)
+
+<iframe width="600" height="400" frameborder="0" src="https://www.mindmeister.com/maps/public_map_shell/1819967279/cism?width=600&height=400&z=auto&t=Lf6QYr7JCX&live_update=1" scrolling="no" style="overflow: hidden; margin-bottom: 5px;">您目前的浏览器无法显示框架元素。请访问MindMeister上的<a href="https://www.mindmeister.com/1819967279/cism?t=Lf6QYr7JCX" target="_blank">CISM</a>页面。</iframe><div class="mb-5"><a href="https://www.mindmeister.com/1819967279/cism?t=Lf6QYr7JCX" target="_blank">CISM</a> 作者 <a href="https://www.mindmeister.com/users/channel/214244" target="_blank">Ming</a></div>
