@@ -19,7 +19,7 @@ plugins:
   - jekyll-seo-tag
 
 authors:
-    ming:
+    Ming:
       name:           Ming
       site:           https://www.mainframe2cloud.com
       avatar:         /assets/images/avatar1.jpg
@@ -43,7 +43,7 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: ming
+      author: Ming
       avatar: /assets/images/avatar1.jpg
 
   # all pages
