@@ -31,4 +31,12 @@ CISM考试的难度和强度还是较高的，没有经过系统的学习和备�
 无论哪种模式，都可以把自己做错的题或者划重点的放入书签，再做完全部题目之后就可以进行重点复习，甚至可以根据题目的难度进行选择。
 ![]({{ site.baseurl }}/assets/images/2021/study5.png)
 
+如果你有机会获取这个题库的话，考试前要把全部1000道题做完，错误率高的分类可以重新做过，整体正确率要达到75%以上。它提供的2套考试题目是从1000道题里面按考试内容随即抽取150道，正确率要达到85%去参加考试才比较稳妥。
+
+一些考试的要点，可以参考我绘制的思维导图。
+
 <iframe width="600" height="400" frameborder="0" src="https://www.mindmeister.com/maps/public_map_shell/1819967279/cism?width=600&height=400&z=auto&t=Lf6QYr7JCX&live_update=1" scrolling="no" style="overflow: hidden; margin-bottom: 5px;">您目前的浏览器无法显示框架元素。请访问MindMeister上的<a href="https://www.mindmeister.com/1819967279/cism?t=Lf6QYr7JCX" target="_blank">CISM</a>页面。</iframe><div class="mb-5"><a href="https://www.mindmeister.com/1819967279/cism?t=Lf6QYr7JCX" target="_blank">CISM</a> 作者 <a href="https://www.mindmeister.com/users/channel/214244" target="_blank">Ming</a></div>
+
+
+ISACA题目的设计可以说是比较狡猾的，很多题目都是考察哪一个是最优或最接近或最先要做的， 往往会伴随1-2个同样符合题目要求但不是最优的答案，以达到机构输出其价值观和思维体系的目的。比如在数据中心发生灾难事件时，安全经理最首要保障的是数据安全还是人员安全？ISACA的答案是人。其实在企业管理三要素的人，流程和系统（科技）之中，最脆弱的环节和最决定性和最有潜力发展的永远是人。
+通过考试只是认证符合ISACA的方法论，在实际工作环境中，根据客观条件和场景的不同，并不一定要按照考试答案来执行，重要的还是根据企业的自身条件和当地的监管要求来量体裁衣，建立企业自己的安全体系和准则。
