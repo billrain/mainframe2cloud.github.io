@@ -6,9 +6,6 @@ categories: [ CICS, Mainframe ]
 image: https://media-exp1.licdn.com/dms/image/C5612AQGbK6-4K7YyKQ/article-cover_image-shrink_423_752/0/1607518735676?e=1633564800&v=beta&t=s59mwa3F1hqEya2BMhEinEmAL5nexrcAhE3AImUEoCY
 ---
 
-
-![]({{ site.baseurl }}/assets/images/2021/study5.png)
-
 # Abstract
 CICS is celebrating its golden anniversary and its vitality remains in the era of API economy thanks to its ever lasting evolution with new technologies. With more traditional applications being transformed into APIs or services, CICS MIPS cost at service level has become an inevitable question for modern CICS customers. This article explains how to produce MIPS usage report at TPS (transaction per second) level and introduces a new perspective for mainframe OLTP capacity planning.
 
