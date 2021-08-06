@@ -43,7 +43,9 @@ To implement hardware encryption/decryption using crypto cards, you need the IBM
 - Common Cryptographic Architecture (CCA)
 - IBM Enterprise PKCS 11 (EP11)
 - Accelerator mode for offload of computer intensive operations in clear key mode
-	(img)
+
+![]({{ site.baseurl }}/assets/images/2021/210713_Figure 5 - 4769 Card.png)
+
 As a mainframe network or CICS expert or as performance specialist, you may want to approach your z hardware engineer to make sure your shop do have the necessary crypto card and the card can be configured as accelerator mode. You would also need the Integrated Cryptographic Service Facility (ICSF) component on z/OS that provides access to the IBM Z CEX7S cryptographic hardware feature.
 
 Before z15, one crypto card can only be configured as one mode, meaning if you set the card to PKCS#11 for pervasive encryption then you cannot use it to accelerate SSL encryption. But seems IBM has heard customer’s feedback (or complain), crypto card with z15 has a feature to set dual modes for one card without comprising its capacity (you may confirm with your z account manager if the feature is available in your country). Without a doubt, it is the correct move to maximise the usage of hardware crypto asset for customer.
@@ -51,7 +53,9 @@ Before z15, one crypto card can only be configured as one mode, meaning if you s
 Now assuming you have all the prerequisites ready: [TELNET running on AT-TLS], crypto cards (at least two) can be configured as accelerator mode and CICS web service running on two way SSL (CICS 5.3 and above required to enable ATTLS aware), now let’s begin our million dollar optimisation!
 
 ### Now we have our materials for the feast, let’s start cooking.
-(img)
+
+![]({{ site.baseurl }}/assets/images/2021/210713_Figure 6 - 2 phase implementation.jpeg)
+
 We can implement it in two phases(Figure 6):
 1. Enable crypto cards as accelerator mode - this will offload TELNET and CICS CWXN SSL encryption to crypto card, but CWXN will still be triggered with minimum CPU usage. We expect 95% of SSL/AT-TLS CPU saving from GCP to crypto card.
 
@@ -61,7 +65,9 @@ Phase 1 is purely hardware change (refresh TCPIP policy might be required), it w
 
 ### Variation
 Even though if you do not have or can not have crypto cards soon, it might be still worthy to migrate CICS SSL to AT-TLS, according to IBM CICS 5.3 benchmark(fn), AT-TLS uses about 24% less CPU than the CICS/SSL configuration(Figure 7).
- (img)
+
+![]({{ site.baseurl }}/assets/images/2021/210713_Figure 7 - CICS5.3 CPU Breakdown.png)
+
 While waiting for the crypto cards, you can consider to migrate CICS SSL to AT-TLS first.
 
 ## How do we measure the MIPS cost and saving?
@@ -77,7 +83,8 @@ And use the similar SAS or other script, we can calculate the MIPS usage for SSL
 
 So to quantify the saving, please collect TCPIP CPU APPL% and web service +3270 CICS CPU APPL% from RMF report, we also need the CICS transaction per second (TPS) for same 15 mins interval. Then convert the CPU APPL% into MIPS for better understanding for wider range of audience. It is best to collect all the data one or two month prior to the phase one implementation date, all the way till one month after the phase two implementation. To make the tangible saving intuitive, I use Tableau to draw CICS TPS vs total MIPS of CICS and TCPIP(Figure 8).
 
-(img)
+![]({{ site.baseurl }}/assets/images/2021/210713_Figure 8 - MIPS in Tableau.jpeg)
+
 On the horizontal we have sum of TPS for 3270 CICS or TOR for traditional TELNET sign-on and TPS for web service CICS. From vertical we can see the combination of MIPS usage for the mentioned CICS and TCPIP address space. Each data point represents the average TPS and MIPS during one 15mins interval. In this chart, orange points are before SSL offload where encryption runs in general CP, grey points are phase one implementation where SSL encryption is taken over by crypto cards. The MIPS saving is very obvious which IT managers can hardly ignore. The blue points are phase two where CWXN transaction no longer required to perform SSL handshake inside CICS.
 
 Now with the help of HSM, heavy SSL/TLS traffic in z/OS can run fully AT-TLS mode without any CPU overhead.
