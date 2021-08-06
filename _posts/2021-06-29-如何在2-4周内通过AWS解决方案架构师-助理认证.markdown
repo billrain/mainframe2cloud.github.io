@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "Offload SSL/TLS to Crypto Card and Save million dollar MIPS!"
+title:  "如何在2-4周内通过AWS解决方案架构师-助理认证"
 author: Ming
 categories: [ AWS, Cloud ]
 tags: featured
 image: assets/images/blog/210629_1.png
 ---
-
 
 下面将要介绍的方法更适合有IT经验的人士，所处岗位和IT规模并不重要，但对IT系统的基础知识必须完善，包括计算、存储、数据库、网络、信息安全等各方面。
 
