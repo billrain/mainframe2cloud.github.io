@@ -39,6 +39,17 @@ MIPS usage is calculated from CPU utilisation reported by WLM report.
 
 ![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 1.JPG)
 
+    //WLMCICS  EXEC PGM=ERBRMFPP
+    //MFPINPUT DD DISP=SHR,DSN=smf
+    //MFPMSGDS DD SYSOUT=*
+    //PPXSRPTS DD DSN=output,
+    //        DISP=(MOD,CATLG),SPACE=(TRK,(500,100)),
+    //        UNIT=3390,DCB=(RECFM=VBA,LRECL=200,BLKSIZE=27800)
+    //PPSUM001 DD SYSOUT=*
+    //SYSIN    DD *
+      SYSRPTS(WLMGL(RCPER(RCICS*)))
+    //
+
 Figure 2 shows the output of above WLM report. The value of ‘TOTAL’ field under ‘TRANS-APPL%-----CP-IIPCP/AAPCP-IIP/AAP’ is the CPU utilisation (of all General CP available to the LPAR) of CICS1 and CICS2. The CPU% includes CPU usage for both CICS system and application.
 
 ![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 2.JPG)
