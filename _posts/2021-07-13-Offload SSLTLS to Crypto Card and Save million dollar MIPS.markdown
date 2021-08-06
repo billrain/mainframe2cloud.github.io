@@ -73,7 +73,7 @@ While waiting for the crypto cards, you can consider to migrate CICS SSL to AT-T
 ## How do we measure the MIPS cost and saving?
 To measure how much SSL/TLS costs your organisation, we can measure it from TELNET over TCPIP and CICS separately. First, define WLM report class for TCPIP stack which runs the TELNET with SSL, also define another WLM report class for the CICS regions which handles the CICS web service SSL handshake (where CWXN transaction takes place and where you define the TCPIPService with the listening port), and don’t forget report class for the 3270 owning region.  WLM report class has to be defined before we implement the offload, because we need to measure before and after the optimisation to quantify the cost saving.
 
-After report classes for TCPIP and CICS are defined, we can run RMF WLM report to get the CPU utilisation in %. As I have described in my previous article — \<Break the Myth of MIPS per TPS of CICS - A New Approach to Mainframe Online Workload Capacity Planning\>:
+After report classes for TCPIP and CICS are defined, we can run RMF WLM report to get the CPU utilisation in %. As I have described in my previous article — [Break the Myth of MIPS per TPS of CICS - A New Approach to Mainframe Online Workload Capacity Planning](https://mainframe2cloud.com/Break-the-Myth-of-MIPS-per-TPS-of-CICS/)
 
 General CP CPU% is converted to MIPS for each 15 minutes interval using:
 
