@@ -78,6 +78,9 @@ After report classes for TCPIP and CICS are defined, we can run RMF WLM report t
 General CP CPU% is converted to MIPS for each 15 minutes interval using:
 
     MIPS = CPU of APPL% x Total MIPS / Number of CPU
+$$
+  MIPS =  \frac{CPU of APPL \% * Total MIPS}{Number Of CPU} 
+$$    
 
 And use the similar SAS or other script, we can calculate the MIPS usage for SSL/TLS for TELNET and CICS. Surprisingly or not, if you have thousands of 3270 users and millions of web service per day, the MIPS used to secure your online data in-flight encryption can be impressive, but it worths every penny of it because no company can afford to lose or leak such data.
 
