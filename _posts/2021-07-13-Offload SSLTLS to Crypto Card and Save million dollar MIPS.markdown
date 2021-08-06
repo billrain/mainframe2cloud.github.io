@@ -81,6 +81,13 @@ $$
 MIPS =  \frac{CPU of APPL \% \cdot Total MIPS}{Number Of CPU}
 $$    
 
+$$
+\sin(-\alpha)=-\sin(\alpha)\\
+\arccos(x)=\arcsin(u)\\
+\log_n(n)=1\\
+\tan(x) = \frac{\sin(x)}{\cos(x)}
+$$
+
 And use the similar SAS or other script, we can calculate the MIPS usage for SSL/TLS for TELNET and CICS. Surprisingly or not, if you have thousands of 3270 users and millions of web service per day, the MIPS used to secure your online data in-flight encryption can be impressive, but it worths every penny of it because no company can afford to lose or leak such data.
 
 So to quantify the saving, please collect TCPIP CPU APPL% and web service +3270 CICS CPU APPL% from RMF report, we also need the CICS transaction per second (TPS) for same 15 mins interval. Then convert the CPU APPL% into MIPS for better understanding for wider range of audience. It is best to collect all the data one or two month prior to the phase one implementation date, all the way till one month after the phase two implementation. To make the tangible saving intuitive, I use Tableau to draw CICS TPS vs total MIPS of CICS and TCPIP(Figure 8).
