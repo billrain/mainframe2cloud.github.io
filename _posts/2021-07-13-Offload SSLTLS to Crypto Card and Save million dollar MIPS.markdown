@@ -78,6 +78,8 @@ After report classes for TCPIP and CICS are defined, we can run RMF WLM report t
 General CP CPU% is converted to MIPS for each 15 minutes interval using:
 
     MIPS = CPU of APPL% x Total MIPS / Number of CPU
+
+
 $$
 MIPS =  \frac{CPU of APPL \% \cdot Total MIPS}{Number Of CPU}
 $$    
