@@ -16,19 +16,25 @@ With modern IT architecture, many mainframe costumers are embracing API economy 
 Within a mainframe environment, SSL/TLS can be implemented for communications over TELNET(3270), MQ connection with distributed, or CICS web service if you are using it. And there are two kinds of SSL, we simply put them as one way SSL and two way SSL:
 
 - One way SSL or Server Certificate Authentication(Figure 1): client validates server only, server does not verify client – required by TELNET
- (img)
+![]({{ site.baseurl }}/assets/images/2021/210713_Figure 1 - 1waySSL.jpeg)
+
 - Two way SSL or Client Authentication(Figure 2): the client application verifies the identity of the server and then the server application verifies the identity of the client application. Both parties share their public certificates, and then validation is performed – most secure, required for CICS web service
-(img)
+![]({{ site.baseurl }}/assets/images/2021/210713_Figure 2 - 2waySSL.jpeg)
+
 When TELNET users in a mainframe environment use 3270 emulator in their own individual PC to connect to mainframe, there is higher chance they use one way SSL to authenticate server (mainframe) only, rather than using two way SSL to identify each user which will require a client SSL certificate to be installed in each user’s PC. Of course if TELNET users are accessing the host from one or several containers or virtual desktops where 3270 emulator are configured with client certificate within the container, their organization won’t need to distribute so many individual SSL certificates.
 
 To adhere to FIPS 140-2 standard, z/OS supports Application Transparent Transport Layer Security (AT-TLS) which provides application-transparent secured connections for both client and server.
 
 For application services like SOAP or RESTful API provided by CICS, the ‘SSL’ attribute in CICS TCPIPSERVICE resource controls which level of security we want to achieve between client and server. CICS [online manual ]describes its usage in Figure 3.
-(img)
+
+![]({{ site.baseurl }}/assets/images/2021/210713_Figure 3 - CICS TCPIPS SSL.png)
+
 To enable two way SSL, we need to use SSL(CLIENTAUTH) together with another attribute AUTHENTICATE(CERTIFICATE). In CICS context, a CICS user ID(consider as system ID, not used for CICS login) has to associate with the client cert. Also SSL cipher suite need to be specified in CIPHERS attribute.
 
 We can see the ATTLSAWARE option in the SSL attribute, that will be our final target to pass SSL handshake from CICS to TCPIP. Before AT-TLS, SSL handshake in CICS is performed by CWXN transaction(Figure 4), and if you are running web service now, you must have noticed for every incoming request, CWXN is triggered first, only after client-server authentication is passed can the pipeline transaction be invoked to process the business logic.
-(img)
+
+![]({{ site.baseurl }}/assets/images/2021/210713_Figure 4 - CICS WS CWXN.png)
+
 For a setup like this, CICS transaction volume is actually doubled that of incoming requests, and you may also notice the total CPU time used by CWXN over GCP is remarkable. With the help of crypto cards, this part of CPU consumption can be relieved from GCP.
 
 ## Implementation
