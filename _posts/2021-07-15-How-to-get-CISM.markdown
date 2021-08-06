@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "如何考取CISM"
-author: Ming
+author: ming
 categories: [ Cybersecurity ]
 tags: featured
 image: https://www.testpreptraining.com/blog/wp-content/uploads/2020/01/How-to-passquerying-data-with-transact-SQL-70-761-5.png

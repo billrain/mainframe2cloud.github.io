@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "如何在2-4周内通过AWS解决方案架构师-助理认证"
-author: Ming
+author: ming
 categories: [ AWS, Cloud ]
 tags: featured
 image: assets/images/2021/210629_1.png
