@@ -107,6 +107,7 @@ When TPS exceeds 43, outliers begin to appear and make it visible that MIPS usag
 
 The bottleneck could be caused by many reasons: increase of CPU intensive applications, increase of non-persistent SSL handshake for CICS web service or lack of certain system resources. System programmers or performance analyst could zoom into the bottleneck interval to understand what is the root cause of the performance downgrade .
 
+
 # Capacity Planing using MIPS per TPS
 Capacity planning is about what is likely to happen, not what will happen. There are too many details for the planners to consider, many of which cannot be measured or predicted with complete accuracy[9]. Planners firstly need to study the MIPS usage among different business hours and pay attention to their high watermark to establish a capacity baseline. Planners also need to have a service level or performance goal in mind, so that they can predict future MIPS growth based business and system development plans.
 
