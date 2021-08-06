@@ -38,7 +38,7 @@ MIPS usage is calculated from CPU utilisation reported by WLM report.
 
 2.    JCL in Figure 1 can be used to generate WLM report for CPU% for each Report Class, with default report interval of 15 minutes.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 1.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 1.JPG)
 
     //WLMCICS  EXEC PGM=ERBRMFPP
     //MFPINPUT DD DISP=SHR,DSN=smf
@@ -53,7 +53,7 @@ MIPS usage is calculated from CPU utilisation reported by WLM report.
 
 Figure 2 shows the output of above WLM report. The value of ‘TOTAL’ field under ‘TRANS-APPL%-----CP-IIPCP/AAPCP-IIP/AAP’ is the CPU utilisation (of all General CP available to the LPAR) of CICS1 and CICS2. The CPU% includes CPU usage for both CICS system and application.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 2.JPG)
+![]({{ site.baseurl }}/assets/images/2021/_Figure 2.JPG)
 
 3.    The WLM report should be filtered to provide the data fields which are relevant to this study only: Date, Time, General CP CPU% of each Report Class.
 
@@ -76,28 +76,28 @@ In this illustration, assuming the LPAR is uncapped with a total MIPS of 2000 wi
 
  SAS program in Figure 3 is to filter WLM report and convert CPU% into MIPS for each CICS Report Class for each interval.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 3.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 3.JPG)
 
  Its output is shown in Figure 4.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 4.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 4.JPG)
 
 Total transaction count for each CICS region or a group of CICS
 1.    CICS SMF 110 record will be processed and it is recommended to create a subset of CICS SMF 110 record from overall SMF into another daily or weekly file to reduce report processing time.
 
 2.    Transaction count per interval can be reported using customised SAS report or other CICS reporting software like CICS Performance Analyzer. A desired transaction count report is shown in Figure 5, which contains both system and application transactions.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 5.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 5.JPG)
 
 3.    Merge MIPS usage with Total Transaction Count for 15 minutes
 
 Scripting tools like REXX or SAS can be used to merge and format the two datasets, sorted by the unique key of date and time interval. Figure 6 shows the SAS step to merge MIPS report with transaction count report by Date and Time.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 6.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 6.JPG)
 
 Final report is shown in Figure 7.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 7.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 7.JPG)
 
 4.    We can download the final report in text format and import it into Excel or SPSS to create graphic reports for further data analysis and demonstration. TPS can be simply calculate by:
 
@@ -106,15 +106,15 @@ Final report is shown in Figure 7.
 Analyse the MIPS usage vs TPS
 In Figure 8, scatter chart is created to show the relationship of MIPS usage and TPS, each scatter dot represents the average TPS (x axis) and MIPS usage (y axis) at one certain 15 minutes interval. The trend line shows the linear relationship of two variables, indicating MIPS cost will increase linearly with TPS, which is almost the best workload growth pattern people are willing to have.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 8.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 8.JPG)
 
 Not all types of online workload will follow linear growth in MIPS cost. In Figure 9, workload in another CICS shows an exponential growth of MIPS, which is a more realistic model for production environment.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 9.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 9.JPG)
 
 When TPS exceeds 43, outliers begin to appear and make it visible that MIPS usage increases exponentially. This is a clear indicator that the system has reached its bottleneck and it aligns with the performance downgrade expected in nominal capacity as shown in Figure 10. <sup>8</sup>
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 10.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 10.JPG)
 
 The bottleneck could be caused by many reasons: increase of CPU intensive applications, increase of non-persistent SSL handshake for CICS web service or lack of certain system resources. System programmers or performance analyst could zoom into the bottleneck interval to understand what is the root cause of the performance downgrade .
 
@@ -124,12 +124,12 @@ Capacity planning is about what is likely to happen, not what will happen. There
 
 Assuming business plan to grow 10% in every 6 months, or users estimate 10 million new CICS API calls to be expected from next year, planners can translate such new load requirements into TPS. In the linear growth model, if 20 TPS increase is expected, assuming MIPS cost per TPS for new workload is 5, additional MIPS required for 20 TPS will be 100 MIPS as shown in Figure 11. A more comprehensive prediction could study the high and low watermark MIPS usage throughout the day or week, with a pre-set SLA target in mind, planners could create a more precise prediction model.    
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 11.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 11.JPG)
 
 # Conclusion
 In Figure 12 we can view capacity planning from 3 perspectives<sup>10</sup>. User, IT and executive have different focus on capacity, and it is a challenge for the planner to find a model which can fit all their needs. The analytical method using MIPS per TPS is able to address some of concerns of user, IT and executive at the same time.
 
-![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 12.JPG)
+![]({{ site.baseurl }}/assets/images/2021/210701_Figure 12.JPG)
 
 Transaction per second can be interpreted into the throughput of the system for the user. Technical staff who know the total installed MIPS can estimate the room for load growth from current usage. As MIPS cost can be translated to dollars, executive will be able to have an intuitive concept of how much one online application or service costs the company.
 
