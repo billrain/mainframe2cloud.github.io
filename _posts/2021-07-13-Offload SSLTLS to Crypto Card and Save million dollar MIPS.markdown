@@ -15,9 +15,9 @@ With modern IT architecture, many mainframe costumers are embracing API economy 
 
 Within a mainframe environment, SSL/TLS can be implemented for communications over TELNET(3270), MQ connection with distributed, or CICS web service if you are using it. And there are two kinds of SSL, we simply put them as one way SSL and two way SSL:
 
-• One way SSL or Server Certificate Authentication(Figure 1): client validates server only, server does not verify client – required by TELNET
+- One way SSL or Server Certificate Authentication(Figure 1): client validates server only, server does not verify client – required by TELNET
  (img)
-• Two way SSL or Client Authentication(Figure 2): the client application verifies the identity of the server and then the server application verifies the identity of the client application. Both parties share their public certificates, and then validation is performed – most secure, required for CICS web service
+- Two way SSL or Client Authentication(Figure 2): the client application verifies the identity of the server and then the server application verifies the identity of the client application. Both parties share their public certificates, and then validation is performed – most secure, required for CICS web service
 (img)
 When TELNET users in a mainframe environment use 3270 emulator in their own individual PC to connect to mainframe, there is higher chance they use one way SSL to authenticate server (mainframe) only, rather than using two way SSL to identify each user which will require a client SSL certificate to be installed in each user’s PC. Of course if TELNET users are accessing the host from one or several containers or virtual desktops where 3270 emulator are configured with client certificate within the container, their organization won’t need to distribute so many individual SSL certificates.
 
@@ -35,7 +35,7 @@ For a setup like this, CICS transaction volume is actually doubled that of incom
 
 To implement hardware encryption/decryption using crypto cards, you need the IBM hardware security module(HSM), the latest model is [CEX7S(4769)] PCIe Cryptographic Coprocessor(Figure 5).  The card has 3 working modes:
 - Common Cryptographic Architecture (CCA)
-- IBM Enterprise PKCS #11 (EP11)
+- IBM Enterprise PKCS 11 (EP11)
 - Accelerator mode for offload of computer intensive operations in clear key mode
 	(img)
 As a mainframe network or CICS expert or as performance specialist, you may want to approach your z hardware engineer to make sure your shop do have the necessary crypto card and the card can be configured as accelerator mode. You would also need the Integrated Cryptographic Service Facility (ICSF) component on z/OS that provides access to the IBM Z CEX7S cryptographic hardware feature.
@@ -65,7 +65,7 @@ After report classes for TCPIP and CICS are defined, we can run RMF WLM report t
 
 General CP CPU% is converted to MIPS for each 15 minutes interval using:
 
-**MIPS = CPU of APPL% x Total MIPS / Number of CPU**
+    MIPS = CPU of APPL% x Total MIPS / Number of CPU
 
 And use the similar SAS or other script, we can calculate the MIPS usage for SSL/TLS for TELNET and CICS. Surprisingly or not, if you have thousands of 3270 users and millions of web service per day, the MIPS used to secure your online data in-flight encryption can be impressive, but it worths every penny of it because no company can afford to lose or leak such data.
 
@@ -78,8 +78,3 @@ Now with the help of HSM, heavy SSL/TLS traffic in z/OS can run fully AT-TLS mod
 
 ## Summary
 Application Transparent Transport Layer Security (AT-TLS) can be used to create secure socket sessions on behalf of CICS, it provides encryption and decryption of data based on policy statements that are coded in the TCPIP Policy Agent. Naturally TELNET as part of z/OS communication server, it can use AT-TLS in TCPIP too. Leveraging IBM crypto card for z, much of the AT-TLS workload can be offloaded from general CP to HSM, hundreds of MIPS can be saved from day to day operation, which will help organisations to reduce TCO of mainframe hardware and software. In this turbulence time with unpredictable economy growth, a predictable million dollars of saving in 3-5 years run is something one should put on top of their organisation’s priority list.
-
-## About the author
-Ming Lu is principle engineer at Central Provident Fund Board based at Singapore. He is leading mainframe system engineering team and responsible for mainframe OLTP related technology and performance. He delivers continuous modernisation and continuous optimisation on mainframe platform, he also has interests in data engineering and analytic.
-
-He can be contacted via: Lu\_\_ming@cpf.gov.sg
