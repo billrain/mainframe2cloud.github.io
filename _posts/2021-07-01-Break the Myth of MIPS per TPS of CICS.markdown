@@ -3,6 +3,7 @@ layout: post
 title:  "Break the Myth of MIPS per TPS of CICS - A New Approach to Mainframe Online Workload Capacity Planning"
 author: Ming
 categories: [ CICS, Mainframe ]
+tags: featured
 image: https://media-exp1.licdn.com/dms/image/C5612AQGbK6-4K7YyKQ/article-cover_image-shrink_423_752/0/1607518735676?e=1633564800&v=beta&t=s59mwa3F1hqEya2BMhEinEmAL5nexrcAhE3AImUEoCY
 ---
 

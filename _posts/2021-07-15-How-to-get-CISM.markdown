@@ -3,6 +3,7 @@ layout: post
 title:  "如何考取CISM"
 author: Ming
 categories: [ Cybersecurity ]
+tags: featured
 image: https://www.testpreptraining.com/blog/wp-content/uploads/2020/01/How-to-passquerying-data-with-transact-SQL-70-761-5.png
 ---
 随着互联网的普及，企业系统与外部网络的交互访问激增。信息系统本身的复杂性对信息安全构建造成巨大的挑战。近年来，随着网络攻击愈发猖獗和种类纷繁的系统漏洞，各企业安全事故频发，从业人士和企业领导对信息安全的重视与日俱增，很多企业和政府都纷纷成立专职专责的信息安全部门和反网络攻击部队。
