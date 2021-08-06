@@ -83,6 +83,7 @@ Total transaction count for each CICS region or a group of CICS
 Scripting tools like REXX or SAS can be used to merge and format the two datasets, sorted by the unique key of date and time interval. Figure 6 shows the SAS step to merge MIPS report with transaction count report by Date and Time.
 
 ![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 6.JPG)
+
 Final report is shown in Figure 7.
 
 ![]({{ site.baseurl }}/assets/images/2021/CICSMIPS_Figure 7.JPG)
