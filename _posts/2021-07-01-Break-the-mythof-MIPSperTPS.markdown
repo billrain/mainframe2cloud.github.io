@@ -59,9 +59,8 @@ Number of CPU is the number of General CPU assigned to the LPAR.
 
 In this illustration, assuming the LPAR is uncapped with a total MIPS of 2000 with 3 General CP assigned, CICS MIPS usage at 09.00.00 interval is:
 
-* CICS01: 34.47% x 2000 / 3 = 229.8 MIPS
-
-* CICS02: 10.31% x 2000 / 3 = 68.8 MIPS
+    CICS01: 34.47% x 2000 / 3 = 229.8 MIPS
+    CICS02: 10.31% x 2000 / 3 = 68.8 MIPS
 
  SAS program in Figure 3 is to filter WLM report and convert CPU% into MIPS for each CICS Report Class for each interval.
 
@@ -90,7 +89,7 @@ Final report is shown in Figure 7.
 
 4.    We can download the final report in text format and import it into Excel or SPSS to create graphic reports for further data analysis and demonstration. TPS can be simply calculate by:
 
-TPS = Transaction Count / 15 mins / 60 secs
+    TPS = Transaction Count / 15 mins / 60 secs
 
 Analyse the MIPS usage vs TPS
 In Figure 8, scatter chart is created to show the relationship of MIPS usage and TPS, each scatter dot represents the average TPS (x axis) and MIPS usage (y axis) at one certain 15 minutes interval. The trend line shows the linear relationship of two variables, indicating MIPS cost will increase linearly with TPS, which is almost the best workload growth pattern people are willing to have.
