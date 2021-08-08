@@ -20,10 +20,10 @@ plugins:
 
 authors:
     ming:
-      name:           ming
+      name:           Ming
       site:           https://www.mainframe2cloud.com
       avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, This is ming - Head of Infra Engineering. I focus on Mainframe to Cloud, Cybersecurity and Data Analytic."
+      bio:            "Hi, This is Ming - Head of Infra Engineering. I focus on Mainframe to Cloud, Cybersecurity and Data Analytic."
       email:          mainframe2cloud@gmail.com
       twitter:        https://www.linkedin.com/in/billrain/
 
