@@ -4,6 +4,7 @@ title:  "Welcome to Mainframe to Cloud!"
 author: ming
 categories: [ Admin ]
 image: assets/images/IBM_System360_Mainframe.jpg
+tags: sticky
 ---
 
 > Domains under heaven,
