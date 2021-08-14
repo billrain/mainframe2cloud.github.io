@@ -6,8 +6,8 @@ categories: [ Cloud, AWS, Azure, GCP ]
 tags: featured
 image: https://miro.medium.com/max/1400/1*Am0NVejJa0D-Xz0VD5yK6w.png
 ---
-| Provider       | Foundational ｜ Associate | Professional | Expert |
-| ----------- | ----------- |
+| Provider    | Foundational ｜ Associate  | Professional | Expert |
+| ----------- | -----------  | ----------- | ----------- | ----------- |
 | AWS      | Title       |
 | GCP   | Cloud Digital Leader | Cloud Engineer ｜ Cloud Architect ｜ NA ｜
 | Azure   | Text        |
