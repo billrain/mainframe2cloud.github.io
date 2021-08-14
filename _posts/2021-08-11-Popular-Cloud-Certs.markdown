@@ -8,6 +8,16 @@ image: https://miro.medium.com/max/1400/1*Am0NVejJa0D-Xz0VD5yK6w.png
 ---
 本文介绍主流服务商的认证体系，如AWS，Google Cloud，和微软Azure。
 
+AAG三家的云技术认证都分为三个等级：入门级，助理级和专业级（包括特殊方向）。
+
+入门级面向非IT或学生等对云缺乏基本概念的人群。
+助理级面向云技术从业或打算转云的人士，要求有实操经验和一定IT经验。
+专家级则是对具体某个方向的深化，也包括每个厂家擅长或独有的技术。
+
+其实两个A厂AWS和Azure都有多门助理级认证，而谷歌GCP则把稍微有深度一点的认证都列入专业门下。
+同样AWS和Azure的两个专家级认证（DevOps和架构），都需要通过相关的助理级认证为前提，而GCP的专家级都是可以直接考取的。
+几家认证的相同方向有：DevOps，架构，网络，大数据，云安全，人工智能或机器学习。
+
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
