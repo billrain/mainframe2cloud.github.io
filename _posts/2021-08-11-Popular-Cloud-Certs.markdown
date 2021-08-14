@@ -8,12 +8,6 @@ image: https://miro.medium.com/max/1400/1*Am0NVejJa0D-Xz0VD5yK6w.png
 ---
 本文介绍主流服务商的认证体系，如AWS，Google Cloud，和微软Azure。
 
-| Provider | Foundational | Associate | Professional | Expert or Specialist |
-|---|---|---|---|---|
-| AWS | AWS Certified Cloud Practitioner | AWS Certified Developer – Associate<br>AWS Certified SysOps Administrator – Associate<br>AWS Certified Solutions Architect – Associate (SAA-C02) | AWS Certified DevOps Engineer – Professional<br>AWS Certified Solutions Architect – Professional | AWS Certified Advanced Networking – Specialty<br>AWS Certified Security – Specialty<br>AWS Certified Machine Learning – Specialty<br>AWS Certified Database – Specialty (DBS-C01)<br>AWS Certified Data Analytics – Specialty (DAS-C01)<br>AWS Certified Alexa Skill Builder – Specialty |
-| GCP | Cloud Digital Leader | Cloud Engineer | Cloud Architect<br>Cloud Developer<br>Data Engineer<br>Cloud DevOps Engineer<br>Cloud Security Engineer<br>Cloud Network Engineer<br>Collaboration Engineer<br>Machine Learning Engineer | NA |
-| Azure | Azure Fundamentals | Azure Administrator Associate<br>Azure Developer Associate<br>Azure AI Engineer Associate<br>Azure Data Scientist Associate<br>Azure Security Engineer Associate |  | Azure Solutions Architect Expert<br>Azure DevOps Engineer Expert |
-
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
