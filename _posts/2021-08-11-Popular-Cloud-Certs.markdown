@@ -37,7 +37,7 @@ image: https://miro.medium.com/max/1400/1*Am0NVejJa0D-Xz0VD5yK6w.png
     <td class="tg-item">AWS Certified Cloud Practitioner</td>
     <td class="tg-item">AWS Certified Developer – Associate<br>AWS Certified SysOps Administrator – Associate<br>AWS Certified Solutions Architect – Associate (SAA-C02)</td>
     <td class="tg-item">AWS Certified DevOps Engineer – Professional<br>AWS Certified Solutions Architect – Professional<br></td>
-    <td class="tg-item">AWS Certified Advanced Networking <br>AWS Certified Security <br>AWS Certified Machine Learning –<br>AWS Certified Database – (DBS-C01)<br>AWS Certified Data Analytics – (DAS-C01)<br>AWS Certified Alexa Skill Builder </td>
+    <td class="tg-item">AWS Certified Advanced Networking <br>AWS Certified Security <br>AWS Certified Machine Learning<br>AWS Certified Database – (DBS-C01)<br>AWS Certified Data Analytics – (DAS-C01)<br>AWS Certified Alexa Skill Builder </td>
   </tr>
   <tr>
     <td class="tg-90e1">GCP<br><br><img src="https://ssl.gstatic.com/pantheon/images/freetrial/cloud_logo_no_text.svg" alt="Image" width="24" height="24"></td>
