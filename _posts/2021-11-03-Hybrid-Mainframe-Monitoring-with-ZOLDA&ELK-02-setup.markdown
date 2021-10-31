@@ -111,7 +111,7 @@ If you are lucky, all the 5 STC of ZOLDA are up running, congratulations!
 # ZOLDA integration with ELK
 IBM ZOLDA comes with 2 types of conf files for ELK:
 * Curated for IBM pre-defined subset of SMF, set of ELK indexes, templates and dashboards
-* Raw for all SMF metrics without pre-defined data mapping (index template in Kibaba)
+* Raw for all SMF metrics without pre-defined data mapping (index template in kibana)
 
 Make sure you have the 3 zip files for ELK conf from ZOLDA.
 
