@@ -91,7 +91,6 @@ If you are lucky, all the 5 STC of ZOLDA are up running, congratulations!
 4. Linux cmds to check status of ELK:
 
 ```
-{
      ps -ef | grep logstash
      netstat -a -n | grep 8080
      netstat -a -n | grep 9600
@@ -105,9 +104,41 @@ If you are lucky, all the 5 STC of ZOLDA are up running, congratulations!
      ps -ef | grep node
      netstat -a -n | grep 5601
      curl -I http://linux.host.ip:5601
-}
 ```
 
 *******
 
 # ZOLDA integration with ELK
+IBM ZOLDA comes with 2 types of conf files for ELK:
+* Curated for IBM pre-defined subset of SMF, set of ELK indexes, templates and dashboards
+* Raw for all SMF metrics without pre-defined data mapping (index template in Kibaba)
+
+Make sure you have the 3 zip files for ELK conf from ZOLDA.
+
+## Install the Curated plugin for ELK
+1. Make sure Kibana is up
+2. Make sure Python is installed
+3. Unzip xx to /elk/ZLDA-ELASTIC-5.1.0.0
+4. Goto /elk/ZLDA-ELASTIC-5.1.0.0, and run python setup.py
+
+## Deploy ingestion kit for Curated
+1. Unzip ZLDA-IngestionKit-curated-5.1.0.0.zip to /elk/zlda-config-curated
+2. Update Q_elasticsearch.conf with Logstash IP and port, add user and password if min security is configured for elk
+
+## Deploy ingestion kit for Raw
+1. Unzip ZLDA-IngestionKit-raw-5.1.0.0.zip and only copy selected conf files to /elk/zlda-config-raw
+2. Update Q_CDPz_Elastic.conf with Logstash IP and port, add user and password if min security is configured for elk
+
+
+## Configuring a pipeline for Logstash
+1. For starting, try Curated pipeline first because you can play with those IBM supplied dashboards
+2. Update /elk/logstash-7.15.0/config/pipelines.yml
+
+```
+- pipeline.id: zlda-config-curated
+  path.config: "/elk/zlda-config-curated/*.conf"
+```
+
+3. Restart Logstash
+
+If you are lucky again, your first mainframe-ELK data pipleine is ONLINE! SYSLOG and SMF can be visualised in Kibana.
