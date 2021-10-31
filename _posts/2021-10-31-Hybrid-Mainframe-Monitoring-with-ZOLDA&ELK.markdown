@@ -39,3 +39,4 @@ The Log Forwarder and System Data Engine send data to Data Streamer via internal
 ## Use case
 ZOLDA provides few pre-defined dashboards as ELK plugin, Splunk has similar dashboards templates as well. The sample dashboards can show OS, subsystem status and health like number of DB locks, STC CPU usage etc. To better capitalize value of ops data and log, SRE can create dashboards with 600+ metrics (SMF types) and key log messages intuitively in Kibana.  Basic supervised Machine Learning framework is also avaiable in Kibana for anomaly detection.
 ![]({{ site.baseurl }}/assets/images/2021/zolda/d1.png)
+![]({{ site.baseurl }}/assets/images/2021/zolda/d3.png)
