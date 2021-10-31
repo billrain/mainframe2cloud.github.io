@@ -79,6 +79,8 @@ to /var/local/CDPServer/zlflog/xxxx.xxxx.zlf.config
 
 If you are lucky, all the 5 STC of ZOLDA are up running, congratulations!
 
+********
+
 # ELK setup
 1. Follow the public resources to install ELK on Linux or Mac
 2. You may need to issue this:
@@ -88,19 +90,20 @@ If you are lucky, all the 5 STC of ZOLDA are up running, congratulations!
 3. Ensure you can access Kibana after setup from http://linux.host.ip:5601/app/home#/
 4. Linux cmds to check status of ELK:
 
-    ps -ef | grep logstash
-    netstat -a -n | grep 8080
-    netstat -a -n | grep 9600
-    ps -ef | grep elasticsearch
-    netstat -a -n | grep 9200
-    netstat -a -n | grep 9300
-    curl -XGET 'linux.host.ip:9200/?pretty'
-    curl -XGET 'http://elastic:password@linux.host.ip:9200/?pretty'
-    curl -XGET 'linux.host.ip:9200/_cluster/health'
-    ps -ef | grep kibana
-    ps -ef | grep node
-    netstat -a -n | grep 5601
-    curl -I http://linux.host.ip:5601
+     ps -ef | grep logstash
+     netstat -a -n | grep 8080
+     netstat -a -n | grep 9600
+     ps -ef | grep elasticsearch
+     netstat -a -n | grep 9200
+     netstat -a -n | grep 9300
+     curl -XGET 'linux.host.ip:9200/?pretty'
+     curl -XGET 'http://elastic:password@linux.host.ip:9200/?pretty'
+     curl -XGET 'linux.host.ip:9200/_cluster/health'
+     ps -ef | grep kibana
+     ps -ef | grep node
+     netstat -a -n | grep 5601
+     curl -I http://linux.host.ip:5601
 
+*******
 
 # ZOLDA integration with ELK
