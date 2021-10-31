@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hybrid Mainframe Monitoring with ZOLDA and ELK"
+title:  "Hybrid Mainframe Monitoring with ZOLDA and ELK part1 Overview"
 author: ming
 categories: [ Mainframe, ELK, cloud ]
 tags: featured
@@ -25,18 +25,18 @@ I have the privilege to order this product on the day of GA and install the soft
 3. Index and dashboard in ELK with mainframe data
 
 ## Overview
-ZOLDA based on ZCDP prodives data insights for hybrid monitoring and real time incident detection, it streams IBM Z ops data in near real time to one or multiple analytic consumers like ELK, Splunk or data receiver like Kafka, Humio.
+ZOLDA based on ZCDP provides data insights for hybrid monitoring and real time incident detection, it streams IBM Z ops data in near real time to one or multiple analytic consumers like ELK, Splunk or data receiver like Kafka, Humio.
 
 ## Architecture
 In general, ZOLDA has 5 STC running in Mainframe, 3 of them are data collector/streamer, and the other 2 are web config tool server.
 
-A lightweigh setup below shows the SMF data is collected by System Data Engine (SDE), and log data is collected by Log Forwarder(LF), the 2 STC are connected to Data Streamer (DS) via MVS TCPIP, DS has one port exposed to outside Linux or Win server where ELK/Spunk is hosted. To config ZOLDA, it provides a web server based on Liberty JVM, a Liberty angel process is required for authentication, the other STC is the Liberty JVM itself. The web config tool is a GUI tool to define data sources and subsribers. Another port is exposed by config tool for system engineers to access the web GUI using their RACF/ACF2 credentials. So total 2 mainframe TCP ports need to be opened.  
+A lightweight setup below shows the SMF data is collected by System Data Engine (SDE), and log data is collected by Log Forwarder(LF), the 2 STC are connected to Data Streamer (DS) via MVS TCPIP, DS has one port exposed to outside Linux or Win server where ELK/Spunk is hosted. To config ZOLDA, it provides a web server based on Liberty JVM, a Liberty angel process is required for authentication, the other STC is the Liberty JVM itself. The web config tool is a GUI tool to define data sources and subscribers. Another port is exposed by config tool for system engineers to access the web GUI using their RACF/ACF2 credentials. So total 2 mainframe TCP ports need to be opened.  
 ![]({{ site.baseurl }}/assets/images/2021/zolda/c1.png)
 
-The Log Forwarder and System Data Engine send data to Data Streamer via internal TCP, and when DS is not avaiable, no data will be piped. DS can utilise ZIIP to offload GCP cost, thus overall MIPS cost is minimum. Between DS and data subsribers like ELK, if ELK is not avaiable, data is cached within DS JVM memory, cached data size is determined by the heapsize of the JVM server. Cached data can also be stored in local USS file system, when subsriber is avaiable again, backlog data can be streamed (warm mode) or discarded (cold mode).
+The Log Forwarder and System Data Engine send data to Data Streamer via internal TCP, and when DS is not available, no data will be piped. DS can utilise ZIIP to offload GCP cost, thus overall MIPS cost is minimum. Between DS and data subscribers like ELK, if ELK is not available, data is cached within DS JVM memory, cached data size is determined by the heapsize of the JVM server. Cached data can also be stored in local USS file system, when subscriber is up online again, backlog data can be streamed (warm mode) or discarded (cold mode).
 ![]({{ site.baseurl }}/assets/images/2021/zolda/c2.png)
 
 ## Use case
-ZOLDA provides few pre-defined dashboards as ELK plugin, Splunk has similar dashboards templates as well. The sample dashboards can show OS, subsystem status and health like number of DB locks, STC CPU usage etc. To better capitalize value of ops data and log, SRE can create dashboards with 600+ metrics (SMF types) and key log messages intuitively in Kibana.  Basic supervised Machine Learning framework is also avaiable in Kibana for anomaly detection.
+ZOLDA provides few pre-defined dashboards as ELK plugin, Splunk has similar dashboards templates as well. The sample dashboards can show OS, subsystem status and health like number of DB locks, STC CPU usage etc. To better capitalize value of ops data and log, SRE can create dashboards with 600+ metrics (SMF types) and key log messages intuitively in Kibana.  Basic supervised Machine Learning framework is also available in Kibana for anomaly detection.
 ![]({{ site.baseurl }}/assets/images/2021/zolda/d1.png)
 ![]({{ site.baseurl }}/assets/images/2021/zolda/d3.png)
