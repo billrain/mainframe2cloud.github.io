@@ -21,8 +21,8 @@ Mainframe being one of the most well established computing platform has dominate
 
 I have the privilege to order this product on the day of GA and install the software even before user guide is released, and have gained some first hands experience after couples of weeks' playing with ZOLDA and ELK for couples. I am going to share my use case in 3 parts:
 1. Overview of ZOLDA (this article)
-2. Installation and customisation of ZOLDA and ELK
-3. Index and dashboard in ELK with mainframe data
+2. [Installation and customisation of ZOLDA and ELK](https://mainframe2cloud.com/Hybrid-Mainframe-Monitoring-with-ZOLDA&ELK-02-setup/)
+3. [Index and dashboard in ELK with mainframe data](https://mainframe2cloud.com/Hybrid-Mainframe-Monitoring-with-ZOLDA&ELK-03-Visualization/)
 
 ## Overview
 ZOLDA based on ZCDP provides data insights for hybrid monitoring and real time incident detection, it streams IBM Z ops data in near real time to one or multiple analytic consumers like ELK, Splunk or data receiver like Kafka, Humio.
