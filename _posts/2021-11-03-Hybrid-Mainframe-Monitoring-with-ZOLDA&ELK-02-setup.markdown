@@ -46,14 +46,16 @@ Apply RACF/ACF2 accesses according to the user guide and additional access if yo
 7. Start HBOCFGA first, followed by HBOCFGT (always start angel process before Liberty)
 
 In HBOCFTG STG log:
+
     CWWKT0016I: Web application available (default_host): https://xxx.xx.xx.xx:17977/cdp/       
     CWWKZ0001I: Application CDPUIServer started in 17.780 seconds.  
 In Liberty messages.log:
+
     This server is connected to the HBOCFGA angel process.    
     Authorized service group KERNEL is available.             
     Authorized service group SAFCRED is available.                                       
 
-Then you should be able to access the config tool web GUI via https://xxx.xx.xx.xx:17977/cdp/ , where xxx is your mainframe host IP. 
+Then you should be able to access the config tool web GUI via https://xxx.xx.xx.xx:17977/cdp/ , where xxx is your mainframe host IP.
 
 # ELK setup
 
