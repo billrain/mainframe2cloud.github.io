@@ -4,7 +4,7 @@ title:  "Offload SSL/TLS to Crypto Card and Save million dollar MIPS!"
 author: ming
 categories: [ CICS, Mainframe ]
 tags: featured
-image: https://media-exp1.licdn.com/dms/image/C5612AQEUE9gZKqScVQ/article-cover_image-shrink_720_1280/0/1613986604367?e=1633564800&v=beta&t=guDge_tmdcYWGKiVfbAJ8ueJzKJPBFTw96-5_07NEOQ
+image: assets/images/2021/210713_Figure 6 - 2 phase implementation.jpeg
 ---
 
 ## Abstract
