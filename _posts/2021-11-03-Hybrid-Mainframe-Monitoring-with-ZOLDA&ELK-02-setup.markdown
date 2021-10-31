@@ -48,17 +48,59 @@ Apply RACF/ACF2 accesses according to the user guide and additional access if yo
 In HBOCFTG STG log:
 
     CWWKT0016I: Web application available (default_host): https://xxx.xx.xx.xx:17977/cdp/       
-    CWWKZ0001I: Application CDPUIServer started in 17.780 seconds.  
+    CWWKZ0001I: Application CDPUIServer started in 17.780 seconds.
+
 In Liberty messages.log:
 
     This server is connected to the HBOCFGA angel process.    
     Authorized service group KERNEL is available.             
     Authorized service group SAFCRED is available.                                       
 
-Then you should be able to access the config tool web GUI via https://xxx.xx.xx.xx:17977/cdp/ , where xxx is your mainframe host IP.
+Then you should be able to access the config tool web GUI via https://xxx.xx.xx.xx:17977/cdp/ , where xxx is your mainframe host IP. After you create the first policy using the web tool, a few files are created under /var/local/CDPServer/cdpConfig/ like myPolicy.policy, where will be used in subsequent steps.
+
+## Data Streamer
+1. Create and update HBODSPRO with the policy to be used, change port, CDP_HOME where necessary
+2. CDP_HOME is the dir where cached data is stored when pipeline is not Online
+3. Start HBODSPRO
+
+## Log Forwarder
+1. Create and update HBOPROC
+2. Create /var/local/CDPServer/zlfconfig, /var/local/CDPServer/zlfwork, /var/local/CDPServer/zlflog
+3. /var/local/CDPServer/cdpConfig/mypolicy.zlf.conf is created when you create the policy using the web tool, copy it
+to /var/local/CDPServer/zlflog/xxxx.xxxx.zlf.config
+4. Copy /var/local/CDPServer/cdpConfig/mypolicy.config.properties to /var/local/CDPServer/zlfconfig/xxxx.xxxx.config.properties
+5. Ensure /usr/lpp/IBM/zcdp/* is readable by the group of HBO* ID
+6. Start HBOPROC
+
+## System Data Engine
+1. Create and update HBOSMF, the /var/local/CDPServer/cdpConfig/mypolicy.sde is created with web config tool as well
+2. Copy /usr/lpp/IBM/zcdp/v5r1m0/SDE/samples/log4j.properties to /var/local/CDPServer/cdpConfig/log4j.properties
+3. Start HBOSMF
+
+If you are lucky, all the 5 STC of ZOLDA are up running, congratulations!
 
 # ELK setup
+1. Follow the public resources to install ELK on Linux or Mac
+2. You may need to issue this:
 
+    sudo mount -o remount,exec /tmp
+
+3. Ensure you can access Kibana after setup from http://linux.host.ip:5601/app/home#/
+4. Linux cmds to check status of ELK:
+
+    ps -ef | grep logstash
+    netstat -a -n | grep 8080
+    netstat -a -n | grep 9600
+    ps -ef | grep elasticsearch
+    netstat -a -n | grep 9200
+    netstat -a -n | grep 9300
+    curl -XGET 'linux.host.ip:9200/?pretty'
+    curl -XGET 'http://elastic:password@linux.host.ip:9200/?pretty'
+    curl -XGET 'linux.host.ip:9200/_cluster/health'
+    ps -ef | grep kibana
+    ps -ef | grep node
+    netstat -a -n | grep 5601
+    curl -I http://linux.host.ip:5601
 
 
 # ZOLDA integration with ELK
