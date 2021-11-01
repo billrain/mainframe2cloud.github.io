@@ -4,7 +4,7 @@ title:  "Hybrid Mainframe Monitoring with ZOLDA and ELK part2 Setup"
 author: ming
 categories: [ Mainframe, ELK, cloud ]
 tags: featured
-image: https://1.cms.s81c.com/sites/default/files/2021-08/Image-1.png
+image: assets/images/2021/zolda/c2.png
 ---
 In the previous [article](https://mainframe2cloud.com/Hybrid-Mainframe-Monitoring-with-ZOLDA&ELK/) I share the high level overview of ZOLDA with data analytic platforms. The entire solution requires ZOLDA installation on system z and ELK on distributed like Win/Linux. The following covers SMPE installation and customisation of ZOLDA on z/OS and simple ELK config on Linux.
 

@@ -4,7 +4,7 @@ title:  "Hybrid Mainframe Monitoring with ZOLDA and ELK part1 Overview"
 author: ming
 categories: [ Mainframe, ELK, cloud ]
 tags: featured
-image: https://1.cms.s81c.com/sites/default/files/2021-08/Image-1.png
+image: assets/images/2021/zolda/ZOLDA.png
 ---
 IBM announced their hybrid operational analytics solution on Sep 2021 which merged two products ZLDA and ZCDP into [Z Operational Log and Data Analytics](https://www.ibm.com/products/z-log-and-data-analytics) (ZOLDA).
 According to IBM:
@@ -22,13 +22,14 @@ Mainframe being one of the most well established computing platform has dominate
 I have the privilege to order this product on the day of GA and install the software even before user guide is released, and have gained some first hands experience after couples of weeks' playing with ZOLDA and ELK for couples. I am going to share my use case in 3 parts:
 1. Overview of ZOLDA (this article)
 2. [Installation and customisation of ZOLDA and ELK](https://mainframe2cloud.com/Hybrid-Mainframe-Monitoring-with-ZOLDA&ELK-02-setup/)
-3. [Index and dashboard in ELK with mainframe data](https://mainframe2cloud.com/Hybrid-Mainframe-Monitoring-with-ZOLDA&ELK-03-Visualization/)
+3. [Index and dashboard in ELK with mainframe data]
 
 ## Overview
 ZOLDA based on ZCDP provides data insights for hybrid monitoring and real time incident detection, it streams IBM Z ops data in near real time to one or multiple analytic consumers like ELK, Splunk or data receiver like Kafka, Humio.
 
 ## Architecture
 In general, ZOLDA has 5 STC running in Mainframe, 3 of them are data collector/streamer, and the other 2 are web config tool server.
+![]({{ site.baseurl }}/assets/images/2021/zolda/ZOLDA.png)
 
 A lightweight setup below shows the SMF data is collected by System Data Engine (SDE), and log data is collected by Log Forwarder(LF), the 2 STC are connected to Data Streamer (DS) via MVS TCPIP, DS has one port exposed to outside Linux or Win server where ELK/Spunk is hosted. To config ZOLDA, it provides a web server based on Liberty JVM, a Liberty angel process is required for authentication, the other STC is the Liberty JVM itself. The web config tool is a GUI tool to define data sources and subscribers. Another port is exposed by config tool for system engineers to access the web GUI using their RACF/ACF2 credentials. So total 2 mainframe TCP ports need to be opened.  
 ![]({{ site.baseurl }}/assets/images/2021/zolda/c1.png)

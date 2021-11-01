@@ -7,3 +7,4 @@ tags: featured
 image: https://1.cms.s81c.com/sites/default/files/2021-08/Image-1.png
 published: false
 ---
+3. [Index and dashboard in ELK with mainframe data](https://mainframe2cloud.com/Hybrid-Mainframe-Monitoring-with-ZOLDA&ELK-03-Visualization/)
