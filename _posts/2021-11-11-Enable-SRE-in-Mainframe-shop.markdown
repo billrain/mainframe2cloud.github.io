@@ -30,6 +30,7 @@ IT operations teams have deployed monitoring tools for decades to track the perf
 Many seasoned Mainframe System Programmers(SP) may think the problem statement applies to distributed environments only and doubt the necessity for a 'centralied computing platform' like System z requires more monitoring, because being one of the most long lasting centralied computing platform, conventioal Mainframe shops have had much better observability of service health even certain level of log aggregation than contemporaneous on-prem distributed clusters, with modern Mainframe monitoring solutions, SP can utilise GUI to measure performance and health of system and services pretty much alike cloud native monitoring. Adopting SRE can maximize value of exsiting asset and improve service quaility to a higher level by practising Continuous Improvement.
 
 ![Google SRE Book](https://lh3.googleusercontent.com/3gX2qgys2I-9HnEIvXUA10ed3AILvg5MclnKWBquEkJKP3g5_kD6WR7Ptwp3TwAGla1DuSmHv64MdTtACNLlArFVq7BwbTrTVhigsA=s900)
+Source: Google Service Reliability Hierarchy
 
 ## Value Stream
 ![]({{ site.baseurl }}/assets/images/2021/SRE/MF2C_SRE_Value_Stream.png)
