@@ -107,4 +107,6 @@ SRE is not a disruptive innovation, many concepts or advocates of SRE oriented f
 ### Observability
 >Observability is the characteristic of software and systems that allows them to be “seen” and allows questions about their behavior to be answered. -- Gartner
 
-Monitoring, as commonly implemented, relies on building dashboards and alerting to escalate known problem scenarios when they occur. Whereas observability enables quick interrogation of a digital service to identify the underlying cause of a performance degradation, even when it has never occurred before.
+Monitoring, as commonly implemented, relies on building dashboards and alerting to escalate known problem scenarios when they occur. Whereas observability enables quick interrogation of a digital service to identify the underlying cause of a performance degradation, even when it has never occurred before. By extending measurement to cover more services and analysing the uncovered iceberg, I&O can provide quicker RCA and more insight to our customers, therefore engineers will have better chance to produce more impactful engineering work.
+
+![Wiki](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AIceberg.jpg&psig=AOvVaw3tc69X8lZuQccGUUltVTjq&ust=1636890584984000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjg1uGilfQCFQAAAAAdAAAAABAD)
