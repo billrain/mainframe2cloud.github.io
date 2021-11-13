@@ -14,9 +14,12 @@ Many Fortune 500 companies have been running Mainframe (IBM System z) for decade
 SRE was brought up by Google back in 2003 which was even earilier than inception of DevOPS.
 
 >Google: SRE is what happens when a software engineer is tasked with what used to be called operations
-IBM: SRE leverages operations data and software engineering to automate IT operations tasks, and to accelerate software delivery while minimizing IT risk
-Apple: SREs at Apple own the full infrastructure stack; from device driver performance debugging to content delivery network traffic management — our responsibilities are both broad and deep
-Microsoft: Site Reliability Engineering is an engineering discipline devoted to helping an organization sustainably achieve the appropriate level of reliability in their systems, services, and products
+
+>IBM: SRE leverages operations data and software engineering to automate IT operations tasks, and to accelerate software delivery while minimizing IT risk
+
+>Apple: SREs at Apple own the full infrastructure stack; from device driver performance debugging to content delivery network traffic management — our responsibilities are both broad and deep
+
+>Microsoft: Site Reliability Engineering is an engineering discipline devoted to helping an organization sustainably achieve the appropriate level of reliability in their systems, services, and products
 
 Different big tech shops have different definition about SRE but from IT infra, service and operation point of view, the main idea is cohesive to:
 >Operate applications in production “mission-critical systems” and do whatever is necessary to keep the site up and running
@@ -31,6 +34,8 @@ Many seasoned Mainframe System Programmers(SP) may think the problem statement a
 
 
 ## SRE vs Traditional I&O
+SRE is not a disruptive innovation, many concepts or advocates of SRE oriented from best practices of ITSM that passed on by the predecessors. The tooling for different platform may vary but it also aims to operate the production runtime securely with high reliability. 
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
 .tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:1px;color:#669;
