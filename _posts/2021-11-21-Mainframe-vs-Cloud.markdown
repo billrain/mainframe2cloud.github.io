@@ -4,7 +4,7 @@ title:  "Total Comparison of Mainframe and Cloud"
 author: ming
 categories: [ Mainframe, Cloud, AWS, GCP, Azure]
 tags: featured
-image: https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/_images/mainframe-migration/mainframe-architecture.png
+image: assets/images/MFvsCloud.png
 published: true
 ---
 
