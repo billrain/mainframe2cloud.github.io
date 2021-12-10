@@ -110,3 +110,9 @@ SRE is not a disruptive innovation, many concepts or advocates of SRE oriented f
 Monitoring, as commonly implemented, relies on building dashboards and alerting to escalate known problem scenarios when they occur. Whereas observability enables quick interrogation of a digital service to identify the underlying cause of a performance degradation, even when it has never occurred before. By extending measurement to cover more services and analysing the uncovered iceberg, I&O can provide quicker RCA and more insight to our customers, therefore engineers will have better chance to produce more impactful engineering work.
 
 ![Wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Iceberg.jpg/824px-Iceberg.jpg)
+
+In recent ![Data-driven hypothesis development](https://www.thoughtworks.com/en-us/insights/articles/data-driven-hypothesis-development) published by thoughtworks, problems are classified into four categories:
+
+![](https://www.thoughtworks.com/content/dam/thoughtworks/images/photography/inline-image/insights/articles/ar_inline_data_driven_1.png)
+
+Mainframe has always been the system or records which produce and hold various and abundant operation data and logs, they are like fossil fuel hidden underground, not all are exploited to enable data driven development and decesion making. Building new observability capability is essential to unveil more unknowns into knowns and mitigate dynamic risks.  
