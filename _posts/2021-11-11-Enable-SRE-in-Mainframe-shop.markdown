@@ -111,7 +111,7 @@ Monitoring, as commonly implemented, relies on building dashboards and alertin
 
 ![Wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Iceberg.jpg/824px-Iceberg.jpg)
 
-In recent ![Data-driven hypothesis development](https://www.thoughtworks.com/en-us/insights/articles/data-driven-hypothesis-development) published by thoughtworks, problems are classified into four categories:
+In recent [Data-driven hypothesis development](https://www.thoughtworks.com/en-us/insights/articles/data-driven-hypothesis-development) published by thoughtworks, problems are classified into four categories:
 
 ![](https://www.thoughtworks.com/content/dam/thoughtworks/images/photography/inline-image/insights/articles/ar_inline_data_driven_1.png)
 
