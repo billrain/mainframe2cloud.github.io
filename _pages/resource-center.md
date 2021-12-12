@@ -19,6 +19,7 @@ permalink: "/resource-center.html"
 
 ## Azure
 [Mainframe and midrange migration](https://azure.microsoft.com/en-us/migration/mainframe/#overview)
+
 [Mainframe Migration Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/infrastructure/mainframe-migration/?toc=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Ftoc.json&bc=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Farchitecture%2Fbread%2Ftoc.json)
 
 
