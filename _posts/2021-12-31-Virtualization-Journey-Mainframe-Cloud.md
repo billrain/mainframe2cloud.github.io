@@ -33,4 +33,12 @@ Believe or not, the original virtualization wasn't hardware built-in hypervisor,
 
 PR/SM is shipped with mainframe machines which acts as type 1 hypervisor, z/VM can be purchased and installed on one LPAR to act as type 2 hypervisor and host thousands of guest VMs like Linux. Back in 2007 when I first created a z/OS image on z/VM using scripts, I could not image it will be called *Infra as Code* after 10years and became standard of 'modern' infra. z/VM back then was able to segment an entire disk volume (DASD) into dozens of mini disks as virtualized DASD volume to boot up z/OS guest VM. Although it is not like today, we can assign 10GB persistent storage to a cloud VM using web console, the concept is similar.
 
-## 
+## Clustering
+
+One way of virtualization is to break big into small, the other way round bringing smaller hardware into a bigger look is clustering. It is also called horizontal scaling, each hardware has ceiling of specs, even for mainframe. When physical capacity is about to reach, another machine can be added to form a cluster of parallel sysplex in mainframe. Each node in the cluster can be placed in different data center but still serve a single endpoint to users, just like you deploy cloud applications in diff zones in diff regions for High Availability, otherwise your service mayhit outage when AWS down for 3 times in one month (Dec 2021). 
+
+
+![]({{ site.baseurl }}/assets/images/2021/Virtualization/MF_PS.svg)
+
+
+## Container
