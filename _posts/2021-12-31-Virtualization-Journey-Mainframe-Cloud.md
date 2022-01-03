@@ -4,7 +4,7 @@ title:  "Journey of Virtualization from Mainframe to Cloud"
 author: ming
 categories: [ Mainframe, Cloud, virtualization, container]
 tags: featured
-image: assets/images/2021/Virtualization/Journey_Computing_Virtualization.svg
+image: assets/images/2021/Virtualization/Journey_Computing_Virtualization.png
 published: true
 ---
 
