@@ -35,10 +35,15 @@ PR/SM is shipped with mainframe machines which acts as type 1 hypervisor, z/VM c
 
 ## Clustering
 
-One way of virtualization is to break big into small, the other way round bringing smaller hardware into a bigger look is clustering. It is also called horizontal scaling, each hardware has ceiling of specs, even for mainframe. When physical capacity is about to reach, another machine can be added to form a cluster of parallel sysplex in mainframe. Each node in the cluster can be placed in different data center but still serve a single endpoint to users, just like you deploy cloud applications in diff zones in diff regions for High Availability, otherwise your service mayhit outage when AWS down for 3 times in one month (Dec 2021). 
-
+One way of virtualization is to break big into small, the other way round bringing smaller hardware into a bigger look is clustering. It is also called horizontal scaling, each hardware has ceiling of specs, even for mainframe which can be configured with 190 CPU cores and 40TB memory with its latest z15 model. When physical capacity is about to reach, another machine can be added to form a cluster of parallel sysplex in mainframe. Each node in the cluster can be placed in different data center but still serve a single endpoint to users, just like you deploy cloud applications in diff zones in diff regions for **High Availability**, otherwise your service may hit outage when AWS down for 3 times in one month (Dec 2021). 
 
 ![]({{ site.baseurl }}/assets/images/2021/Virtualization/MF_PS.svg)
 
-
 ## Container
+Since Docker was introduced in 2013, it has gain popularity steadily together with microservice design and complement each other. Besides the common advantages container and microservice share like developer visibility, isolation, scaling and efficiency, container makes software more portable, runtime more lightweight, and enable infra with key SRE characteristic: self-healing, automated and CI/CD. 
+
+Key difference of Docker and VM is wether the runtime shares the OS Kernel or not, some Platform as Service also leverages on Docker like GAE. But GCP has more powerful weaponized container solution - GKE, although it is not pure zero OPS infra,  it does provide more speedy development with Kubernetes native CI/CD, and great feature of auto-scaling/healing to run same API on thousands of containers.
+![]({{ site.baseurl }}/assets/images/2021/Virtualization/Container.svg)
+
+IBM also began to support Docker on system z with z/OS Container Extensions(zCX) using z/OSMF Workflow, the Docker engine will be ran as an address space in z/OS, and Linux images can be hosted within that address space. The greatest selling point is theoretically the critical data never leaves the core platform which is mainframe for customers facing tight compliance, multi-tiers design can be achieved within one hardware, distributed processing is never as closed as core processing in the same box using same CPU and memory, which supposing to provide fast and secure data communication.  
+![]({{ site.baseurl }}/assets/images/2021/Virtualization/zCX.svg)
