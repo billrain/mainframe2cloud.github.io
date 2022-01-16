@@ -48,6 +48,7 @@ image: assets/images/2022/GCP_cert/GCP0.png
 最后祝想报名考试的同学们好运～
 
 参考资源：
+
 [GCPSketchnote](https://github.com/priyankavergadia/GCPSketchnote)
 ![where shoud you run GCP](https://github.com/priyankavergadia/GCPSketchnote/raw/main/images/ComputeOptions.jpg)
 [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
