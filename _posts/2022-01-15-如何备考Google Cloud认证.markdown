@@ -4,7 +4,7 @@ title:  "如何备考谷歌云认证"
 author: ming
 categories: [ GCP, Cloud ]
 tags: featured
-image: assets/images/2022/GCP_cert/GCP1.png
+image: assets/images/2022/GCP_cert/GCP0.png
 ---
 谷歌云GCP的认证有十种，覆盖架构、开发运维、指定领域几个大类，可以根据自己的爱好和发展方向进行选择。与AWS认证不同， GCP只提供一门助理级认证即GCP Cloud Engineer，其他大部分为专家级Pro认证.
 
@@ -26,7 +26,7 @@ image: assets/images/2022/GCP_cert/GCP1.png
 
 在CI/CD方面，GCP主要考察基于Gitops和谷歌云产品如Cloud Build，Artifact Registry，GKE之间的生产线搭建，以及第三方Jenkins的整合。
 
-云监控方面，需要了解利用GCP Cloud Monitoring(原Stackdriver)来监控计算，储存或应用更层面的性能指标或故障报警。
+云监控方面，需要了解利用GCP Cloud Monitoring(原Stackdriver)来监控计算，储存或应用等各层面的性能指标或故障报警。
 
 
 
