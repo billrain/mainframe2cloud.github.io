@@ -28,6 +28,8 @@ image: assets/images/2022/GCP_cert/GCP0.png
 
 云监控方面，需要了解利用GCP Cloud Monitoring(原Stackdriver)来监控计算，储存或应用等各层面的性能指标或故障报警。
 
+在线课程最好的是谷歌官方在Coursera上提供的[Preparing for Google Cloud Certification: Cloud DevOps Engineer](https://www.coursera.org/professional-certificates/sre-devops-engineer-google-cloud)，不仅提供了非常谷歌化的技术内容讲解，还提供大量lab进行实践练习，而且每个lab都有设计完成目标，平台会自动检测你的完成度并给予评分，可以说是真正实现了学与练的全自动化。
 
+其他在线培训平台如Udemy上面GCP的认证课程不多，内容更丰富的Acloudguru上面有全路径课程，想更全面系统学习的小伙伴可以继续进修。
 
 最后祝想报名考试的同学们好运～
