@@ -10,7 +10,7 @@ image: assets/images/2022/GCP_cert/GCP0.png
 
 ![]({{site.baseurl}}/assets/images/2022/GCP_cert/GCP1.png)
 
-如果你对云或传统IT的各组成要素如计算，储存，网络，开发均有一定知识和经验，比如已经拥有其他云的架构师认证，可以直接从GCP Pro Cloud Architect入手，云服务平台的大部分功能都是相通的，只不过名字，用法，特性和命令行各不相同。如果你具备DEVOPS经验或者想了解云原生的DEVOPS过程，可以先从Cloud DevOps Engineer入手。又或者你是大数据方向，当然也可以从Data Engineer下手。
+如果你对云或传统IT的各组成要素如计算，储存，网络，开发均有一定知识和经验，比如已经拥有其他云的架构师认证，可以直接从GCP Pro Cloud Architect入手，云服务平台的大部分功能都是相通的，只不过名字，用法，特性和命令行各不相同。如果你具备DEVOPS经验或者想了解云原生的DEVOPS过程，可以先从Cloud DevOps Engineer入手。又或者你是大数据方向，当然也可以从Data Engineer下手。GCP认证的考试多为2小时50到选择题（单选和多选），考试费用200美元，有效期仅有两年（AWS多为300美元三年）。
 
 根据我本人的经验，我已经拥有AWS的助理架构师证书，但因为工作需要加强DEVOPS方向技能的培养，所以我先入手了GCP的DEVOPS证书，紧接着又拿下了它的架构师认证。双证的学习，上机，备考一共花费3-4个月的业余时间（和近100美刀的云使用费o(≧v≦)o， K8S的cluster还是小费$$的(･_･;)
 
@@ -31,5 +31,18 @@ image: assets/images/2022/GCP_cert/GCP0.png
 在线课程最好的是谷歌官方在Coursera上提供的[Preparing for Google Cloud Certification: Cloud DevOps Engineer](https://www.coursera.org/professional-certificates/sre-devops-engineer-google-cloud)，不仅提供了非常谷歌化的技术内容讲解，还提供大量lab进行实践练习，而且每个lab都有设计完成目标，平台会自动检测你的完成度并给予评分，可以说是真正实现了学与练的全自动化。
 
 其他在线培训平台如Udemy上面GCP的认证课程不多，内容更丰富的Acloudguru上面有全路径课程，想更全面系统学习的小伙伴可以继续进修。
+
+接下来再来说说GCP [Professional Cloud Architect](https://cloud.google.com/certification/guides/professional-cloud-architect)，任何一家的云架构认证都是考察对自家云主力产品的**基本认知**，并没有多么深入，但覆盖度还是比较广的。对GCP来说，其计算的主力产品GCE，GAE，GKE，储存的GCS，CloudSQL数据库，都是重点考察方面，数据的分析，保管，移植和安全也是重点。按照各个产品大类进行一次系统性的梳理还是很有必要的。
+
+* Section 1. Designing and planning a cloud solution architecture
+* Section 2. Managing and provisioning a solution infrastructure
+* Section 3. Designing for security and compliance
+* Section 4. Analyzing and optimizing technical and business processes
+* Section 5. Managing implementation
+* Section 6. Ensuring solution and operations reliability
+
+参考资源：
+[GCPSketchnote](https://github.com/priyankavergadia/GCPSketchnote)
+![where shoud you run GCP](https://github.com/priyankavergadia/GCPSketchnote/raw/main/images/ComputeOptions.jpg)
 
 最后祝想报名考试的同学们好运～
