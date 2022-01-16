@@ -41,8 +41,15 @@ image: assets/images/2022/GCP_cert/GCP0.png
 * Section 5. Managing implementation
 * Section 6. Ensuring solution and operations reliability
 
+结合系统化学习和考试实际内容，我总结出重点知识点考点脑图一份，有需要的小伙伴可以在[Linkedin](https://www.linkedin.com/in/billrain/)上加我要链接～
+
+![]({{site.baseurl}}/assets/images/2022/GCP_cert/GCP3.png)
+
+最后祝想报名考试的同学们好运～
+
 参考资源：
 [GCPSketchnote](https://github.com/priyankavergadia/GCPSketchnote)
 ![where shoud you run GCP](https://github.com/priyankavergadia/GCPSketchnote/raw/main/images/ComputeOptions.jpg)
-
-最后祝想报名考试的同学们好运～
+[Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
+[Best practices for enterprise organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
+[The gcloud tool cheat sheet](https://cloud.google.com/sdk/docs/cheatsheet)
