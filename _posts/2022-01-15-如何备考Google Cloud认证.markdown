@@ -12,7 +12,9 @@ image: assets/images/2022/GCP_cert/GCP0.png
 
 如果你对云或传统IT的各组成要素如计算，储存，网络，开发均有一定知识和经验，比如已经拥有其他云的架构师认证，可以直接从GCP Pro Cloud Architect入手，云服务平台的大部分功能都是相通的，只不过名字，用法，特性和命令行各不相同。如果你具备DEVOPS经验或者想了解云原生的DEVOPS过程，可以先从Cloud DevOps Engineer入手。又或者你是大数据方向，当然也可以从Data Engineer下手。GCP认证的考试多为2小时50到选择题（单选和多选），考试费用200美元，有效期仅有两年（AWS多为300美元三年）。
 
-根据我本人的经验，我已经拥有AWS的助理架构师证书，但因为工作需要加强DEVOPS方向技能的培养，所以我先入手了GCP的DEVOPS证书，紧接着又拿下了它的架构师认证。双证的学习，上机，备考一共花费3-4个月的业余时间（和近100美刀的云使用费o(≧v≦)o， K8S的cluster还是小费$$的(･_･;)
+根据我本人的经验，我已经拥有AWS的助理架构师证书，但因为工作需要加强DEVOPS方向技能的培养，所以我先入手了GCP的DEVOPS证书，紧接着又拿下了它的架构师认证。双证的学习，上机，备考一共花费3-4个月的业余时间（和近100美刀的云使用费o(≧v≦)o， K8S的cluster还是小费$$的(･_･;)，但是谷歌认证的最大好处就是，在通过认证时即可以选一件免费礼品，均为大牌OEM的户外保暖或包包，虽然颜值一般，都是攻城狮的范儿哈哈～
+
+![]({{site.baseurl}}/assets/images/2022/GCP_cert/GCP2.png)
 
 首先来看谷歌[Professional Cloud DevOps Engineer](https://cloud.google.com/certification/guides/cloud-devops-engineer)官方的考察内容：
 
