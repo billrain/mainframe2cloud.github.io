@@ -52,7 +52,11 @@ image: assets/images/2022/GCP_cert/GCP0.png
 参考资源：
 
 [GCPSketchnote](https://github.com/priyankavergadia/GCPSketchnote)
+
 ![where shoud you run GCP](https://github.com/priyankavergadia/GCPSketchnote/raw/main/images/ComputeOptions.jpg)
+
 [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework)
+
 [Best practices for enterprise organizations](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
+
 [The gcloud tool cheat sheet](https://cloud.google.com/sdk/docs/cheatsheet)
