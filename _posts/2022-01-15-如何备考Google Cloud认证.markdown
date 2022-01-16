@@ -4,7 +4,7 @@ title:  "如何备考谷歌云认证"
 author: ming
 categories: [ GCP, Cloud ]
 tags: featured
-image: assets/images/2021/210629_1.png
+image: assets/images/2022/GCP_cert/GCP1.png
 ---
 谷歌云GCP的认证有十种，覆盖架构、开发运维、指定领域几个大类，可以根据自己的爱好和发展方向进行选择。与AWS认证不同， GCP只提供一门助理级认证即GCP Cloud Engineer，其他大部分为专家级Pro认证.
 
