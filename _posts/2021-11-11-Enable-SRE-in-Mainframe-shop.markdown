@@ -7,11 +7,11 @@ tags: featured
 image: assets/images/2021/SRE/MF2C_SRE_Value_Stream.png
 published: true
 ---
-# Backgroud
-Many Fortune 500 companies have been running Mainframe (IBM System z) for decades and established comprehensive infrastructure and operation model. With emgering cloud and open source technologies, IT operation has been shifting from tranditaionl 'system administration' to Site Reliability Engineering, should mainframe shops embrace the trend and transform their engineering and ops model to SRE?
+# Background
+Many Fortune 500 companies have been running Mainframe (IBM System z) for decades and established comprehensive infrastructure and operation model. With emerging cloud and open source technologies, IT operation has been shifting from traditional 'system administration' to Site Reliability Engineering, should mainframe shops embrace the trend and transform their engineering and ops model to SRE?
 
 # What is Site Reliability Engineering?
-SRE was brought up by Google back in 2003 which was even earilier than inception of DevOPS.
+SRE was brought up by Google back in 2003 which was even earlier than inception of DevOPS.
 
 >Google: SRE is what happens when a software engineer is tasked with what used to be called operations
 
@@ -27,7 +27,7 @@ Different big tech shops have different definition about SRE but from IT infra, 
 # Why there is a need to shift?
 IT operations teams have deployed monitoring tools for decades to track the performance of infrastructure, networks and applications that support business processes. As the IT landscape evolves, monitoring tools have shown limitations in their ability to adapt to the volatility of these architectures. Static dashboards with human-generated thresholds do not scale to these modern environments and are inflexible in assisting the resolution of unforeseen events. Using these tools, the business is unable to determine the state of its applications with a high degree of certainty and understand how their services impact business key performance indicators (KPIs) and customers’ digital experience. To deliver the digital experience necessary to remain competitive, enterprises, and not just their SREs, must go beyond infrastructure and make their digital business observable.
 
-Many seasoned Mainframe System Programmers(SP) may think the problem statement applies to distributed environments only and doubt the necessity for a 'centralied computing platform' like System z requires more monitoring, because being one of the most long lasting centralied computing platform, conventioal Mainframe shops have had much better observability of service health even certain level of log aggregation than contemporaneous on-prem distributed clusters, with modern Mainframe monitoring solutions, SP can utilise GUI to measure performance and health of system and services pretty much alike cloud native monitoring. Adopting SRE can maximize value of exsiting asset and improve service quaility to a higher level by practising Continuous Improvement.
+Many seasoned Mainframe System Programmers(SP) may think the problem statement applies to distributed environments only and doubt the necessity for a 'centralised computing platform' like System z requires more monitoring, because being one of the most long lasting centralised computing platform, conventional Mainframe shops have had much better observability of service health even certain level of log aggregation than contemporaneous on-prem distributed clusters, with modern Mainframe monitoring solutions, SP can utilise GUI to measure performance and health of system and services pretty much alike cloud native monitoring. Adopting SRE can maximize value of existing asset and improve service quality to a higher level by practising Continuous Improvement.
 
 ![Google SRE Book](https://lh3.googleusercontent.com/3gX2qgys2I-9HnEIvXUA10ed3AILvg5MclnKWBquEkJKP3g5_kD6WR7Ptwp3TwAGla1DuSmHv64MdTtACNLlArFVq7BwbTrTVhigsA=s900)
 Source: Google Service Reliability Hierarchy
@@ -115,4 +115,4 @@ In recent [Data-driven hypothesis development](https://www.thoughtworks.com/en-u
 
 ![](https://www.thoughtworks.com/content/dam/thoughtworks/images/photography/inline-image/insights/articles/ar_inline_data_driven_1.png)
 
-Mainframe has always been the system or records which produce and hold various and abundant operation data and logs, they are like fossil fuel hidden underground, not all are exploited to enable data driven development and decesion making. Building new observability capability is essential to unveil more unknowns into knowns and mitigate dynamic risks.  
+Mainframe has always been the system or records which produce and hold various and abundant operation data and logs, they are like fossil fuel hidden underground, not all are exploited to enable data driven development and decision making. Building new observability capability is essential to unveil more unknowns into knowns and mitigate dynamic risks.  
