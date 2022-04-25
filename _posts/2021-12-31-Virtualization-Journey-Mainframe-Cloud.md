@@ -48,6 +48,9 @@ Key difference of Docker and VM is whether the runtime shares the OS Kernel or n
 IBM also began to support Docker on system z with z/OS Container Extensions(zCX) using z/OSMF workflow, the Docker engine will be ran as an address space in z/OS, and Linux images can be hosted within that address space. The greatest selling point is theoretically the critical data never leaves the core platform which is mainframe for customers facing tight compliance, multi-tiers design can be achieved within one hardware, distributed processing is never as closed to core processing as now in the same box using same CPU and memory, which is supposed to provide fast and secure data communication.  
 ![]({{ site.baseurl }}/assets/images/2021/Virtualization/zCX.svg)
 
-Kubernetes is not supported on system z yet, but I will not be surprised to see it coming in the next 1-2 year, Redhat OpenShift is already a strong player in K8S market, with right strategy, the *lift and shift* approach can be re-invented as **lift and sit**. 
+Kubernetes is not supported natively on system z yet, but I will not be surprised to see it coming in the next 1-2 year. IBM already announced general direction in June 2020:
+> - IBM intends to deliver a container runtime for IBM z/OS® in support of Open Containers Initiative compliant images comprising z/OS software.
+> - IBM intends to deliver Kubernetes orchestration for containers on z/OS.
+Considering Redhat OpenShift is already a strong player in K8S market, with right strategy, the *lift and shift* approach can be re-invented as **lift and sit**. 
 
 Thanks for reading. 
