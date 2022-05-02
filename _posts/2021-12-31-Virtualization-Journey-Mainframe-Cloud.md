@@ -48,16 +48,19 @@ Key difference of Docker and VM is whether the runtime shares the OS Kernel or n
 IBM also began to support Docker on system z with z/OS Container Extensions(zCX) using z/OSMF workflow, the Docker engine will be ran as an address space in z/OS, and Linux images can be hosted within that address space. The greatest selling point is theoretically the critical data never leaves the core platform which is mainframe for customers facing tight compliance, multi-tiers design can be achieved within one hardware, distributed processing is never as closed to core processing as now in the same box using same CPU and memory, which is supposed to provide fast and secure data communication.  
 ![]({{ site.baseurl }}/assets/images/2021/Virtualization/zCX.svg)
 
-Kubernetes is not supported natively on system z yet, but I will not be surprised to see it coming in the next 1-2 year. IBM already announced general direction in June 2020:
+Kubernetes is not supported natively on System z (z/OS) yet, but I will not be surprised to see it coming in the next 1-2 year. IBM already announced general direction in June 2020:
 
 > - IBM intends to deliver a container runtime for IBM z/OS® in support of Open Containers Initiative compliant images comprising z/OS software.
 > - IBM intends to deliver Kubernetes orchestration for containers on z/OS.
 
-Considering Redhat OpenShift is already a strong player in hybird K8S market, with right strategy, the *lift and shift* approach can be re-invented as **lift and sit**. 
 
 *Update May 2022* IBM just announced Redbook 'Building an OpenShift Environment
-on IBM Z' and explanined details on few approaches to implement Kubernetes with Openshift on Linux powered z/VM or Redhat KVM, which can be hosted on System z and LinuxOne family. 
-
+on IBM Z' and explanined details on few approaches to implement Kubernetes with Openshift on Linux powered z/VM or Redhat KVM, which can be hosted on System z and LinuxOne family. However Openshift can only run on zLinux at this moment, not under native z/OS yet. 
 ![]({{ site.baseurl }}/assets/images/2021/Virtualization/Openshift.svg)
+
+Considering Redhat OpenShift is already a strong player in hybrid K8S market, with right strategy, the *lift and shift* approach can be re-invented as **lift and sit**. 
+
+Apparently after IBM acquired Redhat and integrated its strong open system product line with IBM server platforms, an engineering team with more dynamics was assembled to tract the big ship to the correct direction which is hybrid, and Redhat is the barge.
+![]({{ site.baseurl }}/assets/images/2021/Virtualization/barge.png)
 
 Thanks for reading. 
