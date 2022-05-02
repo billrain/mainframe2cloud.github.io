@@ -49,8 +49,14 @@ IBM also began to support Docker on system z with z/OS Container Extensions(zCX)
 ![]({{ site.baseurl }}/assets/images/2021/Virtualization/zCX.svg)
 
 Kubernetes is not supported natively on system z yet, but I will not be surprised to see it coming in the next 1-2 year. IBM already announced general direction in June 2020:
+
 > - IBM intends to deliver a container runtime for IBM z/OS® in support of Open Containers Initiative compliant images comprising z/OS software.
 > - IBM intends to deliver Kubernetes orchestration for containers on z/OS.
-Considering Redhat OpenShift is already a strong player in K8S market, with right strategy, the *lift and shift* approach can be re-invented as **lift and sit**. 
+
+Considering Redhat OpenShift is already a strong player in hybird K8S market, with right strategy, the *lift and shift* approach can be re-invented as **lift and sit**. 
+
+*Update May 2022* IBM just announced Redbook <Building an OpenShift Environment
+on IBM Z> and explanined details on few approaches to implement Kubernetes with Openshift on Linux powered z/VM or Redhat KVM, which can be hosted on System z and LinuxOne family. 
+![]({{ site.baseurl }}/assets/images/2021/Virtualization/Openshift.svg)
 
 Thanks for reading. 
