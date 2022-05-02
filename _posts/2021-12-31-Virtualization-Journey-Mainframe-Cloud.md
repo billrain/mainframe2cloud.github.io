@@ -55,8 +55,9 @@ Kubernetes is not supported natively on system z yet, but I will not be surprise
 
 Considering Redhat OpenShift is already a strong player in hybird K8S market, with right strategy, the *lift and shift* approach can be re-invented as **lift and sit**. 
 
-*Update May 2022* IBM just announced Redbook <Building an OpenShift Environment
-on IBM Z> and explanined details on few approaches to implement Kubernetes with Openshift on Linux powered z/VM or Redhat KVM, which can be hosted on System z and LinuxOne family. 
+*Update May 2022* IBM just announced Redbook 'Building an OpenShift Environment
+on IBM Z' and explanined details on few approaches to implement Kubernetes with Openshift on Linux powered z/VM or Redhat KVM, which can be hosted on System z and LinuxOne family. 
+
 ![]({{ site.baseurl }}/assets/images/2021/Virtualization/Openshift.svg)
 
 Thanks for reading. 
