@@ -19,8 +19,7 @@ A server or truck is designed to process and carry tons of records or cargo in a
 
 ### About IBM z16
 Z16 is the latest model of IBM’s flagship enterprise server platform System z, also known as Mainframe which is widely used by corporates in finance, retail, airline, manufacturing and public sectors. Its recent launch released industry leading features like embedded AI accelerator, quantum safe cyber resiliency and more speedy workload integration with hybrid cloud. 
-
-![]({{site.baseurl}}/assets/images/2022/CPU/z16.jpeg)
+![]({{site.baseurl}}/assets/images/2022/CPU/z16.jpeg)<center>Lastest IBM z16 launch</center>
 
 ### About Apple Mac Studio
 Apple's most powerful custom silicon-based Mac Studio is a high end desktop computer device targeting power users like content creators, designers, engineers/developers, which is highly optimised for certain creative and development workload.
@@ -36,7 +35,6 @@ We can see the M1 Ultra chip designed by Apple and manufactured by TSMC has more
 ![]({{site.baseurl}}/assets/images/2022/CPU/Telum_PU.png)
 
 IBM Telum has 8 core per chip (versus 12 for IBM z15) running at 5.2GHz and Apple M1 Max has 10 core per chip but running a lower clock frequency of 3.2GHz. 
-
 ![]({{site.baseurl}}/assets/images/2022/CPU/Apple-M1-chip-family.jpg)
 
 Both Telum and M1 Ultra are catching the chip design wind of chiplet, in laymen’s word, to combine 2 or more chips together and make them work as one. ‘Gluing’ two chips as one sounds simple but to achieve real high speed interconnect, many technical challenges need to be resolved like clock synchronization, latency and power consumption. 7nm/5nm silicon lithography might be mature, but to manufacture *bigger* size of die is not cost effective as combining two smaller chips together yet.  Before entering 3nm era, maximising the product pipeline of existing 7nm/5nm and extending its capacity by chiplet can be fair choice. 
