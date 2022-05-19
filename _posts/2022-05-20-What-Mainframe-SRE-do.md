@@ -4,7 +4,7 @@ title:  "What does Mainframe SRE do?"
 author: ming
 categories: [ SRE, Mainframe]
 tags: featured
-image: assets/images/2022/CPU/Telum_vs_M1.png
+image: assets/images/2022/MainframeSRE/Mainframe%20SRE.png
 ---
 
 ## Intro
