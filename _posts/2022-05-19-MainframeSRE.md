@@ -26,12 +26,13 @@ But in general, *programming* won’t occupy 25% of time of nowadays SP, if we l
 * Knowledge of any sub-domains like networking, storage, SDLC, database, ISV etc. 
 
 > The system programmer is responsible for managing the mainframe hardware configuration, and installing, customising, and maintaining the mainframe operating system. System programmers ensure that their installation's system and its services are available and operating to meet service level agreements. Installations with 24-hour, 7-day operations need to plan for minimal disruption of their operation activities. — IBM
-![]({{site.baseurl}}/assets/images/2022/MainframeSRE/DraggedImage.tiff)
+![]({{site.baseurl}}/assets/images/2022/MainframeSRE/IBMSP.jpeg)
 
 In big mainframe shops like banks, SP role can breakdown into more specialised roles like z/OS SP, CICS SP, DBA, network SP etc. However in a small installation like ours, we don’t have the luxury of dedicated role groups, everyone in my team will cover few domains concurrently and rotate, so after years of 24x7 supporting production mission critical system, we blossomed decathletes who can cover security, network, storage, hardware management, operating system, batch, OLTP, operation, and as more as you can name it. 
 
 If you don’t believe me there are so many sub-fields under System z that one SP would take years to learn and practice, just take a look at the IBM official documents on z/OS system programming: 
-![](Redbook.png)
+![]({{site.baseurl}}/assets/images/2022/MainframeSRE/Redbook.png)
+
 The Redbook collection contains 13 volumes varying 2-5MB each, probably longer than 7 volumes of Harry Potter or 5 volumes of Game of Thrones — and they are ABC only. Back in the time when I started my SP journey, there was not online courses available (besides IBM internal training), I got to learn them in the hard way - reading e-books and manuals — which is considered better than my seniors’ time because they used to read hardcopy only, at least I could carry gigabytes of books in my Thinkpad. It took me months for finishing first round of the 13 books, after few years’ practices, I just need few days to re-read again. 
 ![]({{site.baseurl}}/assets/images/2022/MainframeSRE/Redbook2.png)
 But nowadays IBM is providing free [intro courses](https://www.coursera.org/learn/system-programming) online as part of Mainframe Practitioner Professional Certificate program. 
@@ -63,7 +64,9 @@ Recently I’ve been tasked to re-write the JD for my mainframe engineering team
 
 My current (ex-to-be) company is the first one in Singapore to embrace computer in the 1960s, IBM 1401 is considered as the predecessor of Mainframe platform. The computer history of the board is almost the computer history of the nation. I had no surprise to see an astonishing well established mainframe shop since the first day I joined the company. We are a small shop though, we are carrying the comprehensive suit of arsenal for our operation, just like as small country as Singapore is, it is equipped with full setup of airforce, navy, land army and a newly formed cyber force. Our mainframe sys-prog team isn’t big like the banks or payment networks who separate teams with more specific functions like OS, network, OLTP etc, our one team looks after the entire infra of mainframe ecosystem covering software/hardware installation, customization, maintenance, production operation support 24x7, from the moment the hardware, OS and software are ordered, we are responsible for their end to end lifecycle. We also support enterprise wide projects for new initiatives (enable API economy) or refactoring (migration of COBOL to Java), by designing and implementing the new architecture on system z. And don’t forget, although mainframe is one of the most secure computer platforms ever developed by human, it still requires human to implement best security practice to harden and remedy vulnerabilities, that’s part of SP’s job too. 
 
-![]({{site.baseurl}}/assets/images/2022/MainframeSRE/SRE_2cat.jpeg "(From SRE Workbook by Google)")
+![]({{site.baseurl}}/assets/images/2022/MainframeSRE/SRE_2cat.jpeg 
+(From SRE Workbook by Google)
+
 To cope with Google’s category of SRE work, our BAU (business as usual) work falls under *operation*. Routine tasks like regular health check, paper work (we write a lot workbooks), service/incident tickets and many other adhoc requests that we carry day to day, most of which repetitive but cannot run away from. The other portion of work is to carry projects for system enhancement, toil reduction or component upgrade. As many SRE evangelist believe, BAU work should not exceed 50% of overall workload, because it does not provide enduring engineering nor business value, manual operation shall be converted into automated service/dashboard/alert/recovery. 
 
 ## Automation 
