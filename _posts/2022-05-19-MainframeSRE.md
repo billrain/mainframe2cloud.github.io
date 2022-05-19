@@ -24,6 +24,7 @@ But in general, *programming* won’t occupy 25% of time of nowadays SP, if we l
 * Problem determination and troubleshooting 
 * Define SOP for operation
 * Knowledge of any sub-domains like networking, storage, SDLC, database, ISV etc. 
+
 > The system programmer is responsible for managing the mainframe hardware configuration, and installing, customising, and maintaining the mainframe operating system. System programmers ensure that their installation's system and its services are available and operating to meet service level agreements. Installations with 24-hour, 7-day operations need to plan for minimal disruption of their operation activities. — IBM
 ![]({{site.baseurl}}/assets/images/2022/MainframeSRE/DraggedImage.tiff)
 
@@ -57,7 +58,9 @@ SRE as a function, ensures company’s services - both internal and public facin
 
 ## What does Mainframe SRE do?
 Recently I’ve been tasked to re-write the JD for my mainframe engineering team, traditionally referred as the System Programmer (SP or SysProg) team. There isn’t any mainframe SRE JD to reference in the market, rather I drafted the scope and requirements based on open system/cloud SRE and our actual work. 
+
 ![]({{site.baseurl}}/assets/images/2022/MainframeSRE/IBM1401.png)
+
 My current (ex-to-be) company is the first one in Singapore to embrace computer in the 1960s, IBM 1401 is considered as the predecessor of Mainframe platform. The computer history of the board is almost the computer history of the nation. I had no surprise to see an astonishing well established mainframe shop since the first day I joined the company. We are a small shop though, we are carrying the comprehensive suit of arsenal for our operation, just like as small country as Singapore is, it is equipped with full setup of airforce, navy, land army and a newly formed cyber force. Our mainframe sys-prog team isn’t big like the banks or payment networks who separate teams with more specific functions like OS, network, OLTP etc, our one team looks after the entire infra of mainframe ecosystem covering software/hardware installation, customization, maintenance, production operation support 24x7, from the moment the hardware, OS and software are ordered, we are responsible for their end to end lifecycle. We also support enterprise wide projects for new initiatives (enable API economy) or refactoring (migration of COBOL to Java), by designing and implementing the new architecture on system z. And don’t forget, although mainframe is one of the most secure computer platforms ever developed by human, it still requires human to implement best security practice to harden and remedy vulnerabilities, that’s part of SP’s job too. 
 
 ![]({{site.baseurl}}/assets/images/2022/MainframeSRE/SRE_2cat.jpeg "(From SRE Workbook by Google)")
