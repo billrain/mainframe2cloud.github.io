@@ -77,7 +77,9 @@ In modern society, tech industry has been trying to re-define things we use day 
 (Famous IEASYSnn parm used to load mainframe z/OS)
 
 One good thing for the almost 60 years old technology is, all messages produced by its OS and each component are documented, I am quite sure some hardcopy of them can still be found in each datacenter that hosts a mainframe. Electronic copies are more accessible and serve as * stackoverflow* of mainframe SRE. 
-![](DFHSJ1007.png)
+
+![]({{site.baseurl}}/assets/images/2022/MainframeSRE/DFHSJ1007.png)
+
 Not all but many of the messages are explained by its manufactures, experienced engineers can find a hint from the description and perform action to fix it. Otherwise, last resort is always contact your vendor support because it is not open source, many customers subscribe to expensive technical support. The troubleshooting skills required for mainframe SRE are between L1 and L2, which is to spot, locate the error, produce and collect the logs, analyse, propose or evaluate fix and apply them, but not to touch the source code because that’s considered L3. 
 
 ## Observability
@@ -95,6 +97,7 @@ Another APM called Jennifer is able to provide holistic CICS Java monitoring sta
 
 ## Incident 
 ![]({{site.baseurl}}/assets/images/2022/MainframeSRE/oncall.png)
+
 Once SRE have monitoring and automation in place, we can attend to ticket and response to incident promptly. To repeat, monitoring is to monitor what we’ve known, many areas we monitor today, have caused error or incident before so we build telemetry to detect. Mainframe SP are 24x7 so are SRE, duty may rotate as some are specialised in OS (z/OS SP) and some are expert in OTLP (CICS SP). Once they become more or less 360 degree, they can carry the SRE title without hindsight. SRE usually play the operation lead role in incident outbreak. To seek order in chaos, it requires the leader individual to be unbelievably clam during the crisis, but at the same time high convincible. Especially for mainframe SRE whose systems are all mission critical, millions of transaction can be affected during short service disruption, those who can replay the incident in their minds and quickly propose assumption and validate it, are the outstanding individual contributors. Putting down the fire is stressful, we should not let postmortem to be painful, because we don’t want to burn the mental health of our firefighters. A blameless postmortem is always encouraged at all levels, remedy and preventive measure will be discussed and implemented, process and tooling can always be improved, just don’t be harsh on the people. Psychological safe culture is the new leadership mandate.  
 
 ## CI/CD
