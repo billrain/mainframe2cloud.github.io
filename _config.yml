@@ -6,7 +6,7 @@ favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'mainframe2cloud-com'
 email: 'mainframe2cloud@gmail.com'
-mailchimp-list: 'https://mainframe2cloud.us6.list-manage.com/subscribe/post?u=d23d4ad5e48d0a28930337cef&amp;id=92539b7ce9'
+#mailchimp-list: 'https://mainframe2cloud.us6.list-manage.com/subscribe/post?u=d23d4ad5e48d0a28930337cef&amp;id=92539b7ce9'
 
 include: ["_pages"]
 permalink: /:title/
