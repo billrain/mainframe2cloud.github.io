@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mainframe2cloud.com
+Token: e6b292f751fa0848fe7dc87f7b6f65919c4251d10b98120d838b575978f185bb
