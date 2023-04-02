@@ -88,8 +88,8 @@ SRE is not a disruptive innovation, many concepts or advocates of SRE oriented f
   </tr>
   <tr>
     <td class="tg-0lax">Change Management</td>
-    <td class="tg-0lax">SDLC</td>
-    <td class="tg-0lax">CI/CD</td>
+    <td class="tg-0lax">SDLC(waterfall)</td>
+    <td class="tg-0lax">CI/CD(agile)</td>
   </tr>
   <tr>
     <td class="tg-0lax">Culture </td>
@@ -97,7 +97,7 @@ SRE is not a disruptive innovation, many concepts or advocates of SRE oriented f
     <td class="tg-0lax">Blameless postmortem</td>
   </tr>
   <tr>
-    <td class="tg-0lax">May-day</td>
+    <td class="tg-0lax">Daily work</td>
     <td class="tg-0lax">Depends on BAU workload</td>
     <td class="tg-0lax">50% focus on improvement</td>
   </tr>
