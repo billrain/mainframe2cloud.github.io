@@ -73,7 +73,7 @@ SRE is not a disruptive innovation, many concepts or advocates of SRE oriented f
   </tr>
   <tr>
     <td class="tg-0lax">Automation</td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Perform Operation</td>
     <td class="tg-0lax">Reduce Toil </td>
   </tr>
   <tr>
