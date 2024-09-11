@@ -43,7 +43,7 @@ Just as the original BMC helps startups and established companies to structure t
 
 The **Business Model Canvas for SRE** can be structured similarly to the traditional canvas, but with a focus on the unique elements of SRE practices and how they impact the organization. Below is an outline based on my SRE Business Model Canvas:
 
-![Business Model Canvas for SRE by LuMing]({{site.baseurl}}/assets/images/2024/Canvas/BusinessModelCanvasSRE.pngg)
+![Business Model Canvas for SRE by LuMing]({{site.baseurl}}/assets/images/2024/Canvas/BusinessModelCanvasSRE.png)
 
 ### Key Partners
 - **Data Center (DC) Operations**: Essential for managing physical infrastructure and ensuring optimal performance of on-premises systems.
