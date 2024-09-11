@@ -2,7 +2,7 @@
 layout: post
 title:  "Business Model Canvas for Site Reliability Engineering (SRE)"
 author: ming
-categories: [ SRE, Framework]
+categories: [ SRE, Framework, Business Model]
 tags: featured
 image: assets/images/2024/Canvas/BusinessModelCanvasSRE.png
 published: true
