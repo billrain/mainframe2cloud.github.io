@@ -21,10 +21,10 @@ Singapore is a thriving tech hub in Southeast Asia, offering numerous opportunit
 - [Morgan McKinley Salary Guide](https://www.morganmckinley.com/sg/salary-guide)
 
 ## Tech Communities
-- [Singapore Tech Forum](https://t.me/SGTechCommunity)
+<!-- - [Singapore Tech Forum](https://t.me/SGTechCommunity) -->
 - [SGTECH](https://sgtech.org.sg/)
 - [Singapore Computer Society](https://www.scs.org.sg/)
-- [Women in Tech Singapore](https://singapore.womenintech.net/)
+<!-- - [Women in Tech Singapore](https://singapore.womenintech.net/) -->
 
 ## Useful Resources
 - [Tech.Pass](https://www.edb.gov.sg/en/how-we-help/incentives-and-schemes/tech-pass.html) - Visa for tech entrepreneurs and experts
