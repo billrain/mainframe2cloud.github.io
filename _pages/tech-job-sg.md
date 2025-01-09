@@ -8,7 +8,7 @@ permalink: "/tech-job-sg.html"
 Singapore is a thriving tech hub in Southeast Asia, offering numerous opportunities for tech professionals. Here's a curated list of resources to help you navigate the tech job market in Singapore.
 
 ## Job Statistics Dashboard
-- [TechJobStats](https://mf2c.grafana.net/d/fe5rs6je35zwgf/jobstats?orgId=1&from=now-90d&to=now&timezone=Asia%2FSingapore) - Tech job salary, count by domains
+- [TechJobStats](https://mf2c.grafana.net/public-dashboards/ddc451593f0447af9d0fa308fc703d43) - Tech job salary, count by domains
 
 ## Job Portals
 - [MyCareersFuture](https://www.mycareersfuture.gov.sg/) - Singapore government job portal
