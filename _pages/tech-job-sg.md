@@ -10,6 +10,19 @@ Singapore is a thriving tech hub in Southeast Asia, offering numerous opportunit
 ## Job Statistics Dashboard
 - [TechJobStats](https://mf2c.grafana.net/public-dashboards/ddc451593f0447af9d0fa308fc703d43) - Tech job salary, count by domains
 
+## FindBestJobSG Podcast
+![Tech Jobs]({{site.baseurl}}/assets/images/2025/Podcast_1300x740.png)
+## Embedded Podcast Player
+
+<iframe height="450" width="100%" title="Media player" 
+        src="https://embed.podcasts.apple.com/us/podcast/findbestjobsg/id1789505980?itscg=30200&amp;itsct=podcast_box_player&amp;ls=1&amp;mttnsubad=1789505980&amp;theme=auto" 
+        id="embedPlayer" 
+        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" 
+        allow="autoplay *; encrypted-media *; clipboard-write" 
+        style="border: 0px; border-radius: 12px; width: 100%; height: 450px; max-width: 660px;">
+</iframe>
+
+
 ## Job Portals
 - [MyCareersFuture](https://www.mycareersfuture.gov.sg/) - Singapore government job portal
 - [LinkedIn Jobs Singapore](https://www.linkedin.com/jobs/singapore-jobs) - Professional networking and job listings
