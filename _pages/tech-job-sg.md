@@ -29,6 +29,7 @@ Singapore is a thriving tech hub in Southeast Asia, offering numerous opportunit
 - [NodeFlair](https://www.nodeflair.com/) - Tech salary transparency platform
 
 ## Salary Guides
+- [MOM COMPASS C1. Salary benchmarks](https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility/compass-c1-salary-benchmarks)
 - [NodeFlair Tech Salary Guide](https://www.nodeflair.com/salaries)
 - [Morgan McKinley Salary Guide](https://www.morganmckinley.com/sg/salary-guide)
 
