@@ -33,6 +33,10 @@ Singapore is a thriving tech hub in Southeast Asia, offering numerous opportunit
 - [NodeFlair Tech Salary Guide](https://www.nodeflair.com/salaries)
 - [Morgan McKinley Salary Guide](https://www.morganmckinley.com/sg/salary-guide)
 
+## Salary Benchmarks
+- ICT sector
+[![Tech Jobs]({{site.baseurl}}/assets/images/2025/2025_salary_benchmark_info-communication.png)]
+
 ## Tech Communities
 <!-- - [Singapore Tech Forum](https://t.me/SGTechCommunity) -->
 - [SGTECH](https://sgtech.org.sg/)
