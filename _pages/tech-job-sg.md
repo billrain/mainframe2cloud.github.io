@@ -35,7 +35,18 @@ Singapore is a thriving tech hub in Southeast Asia, offering numerous opportunit
 
 ## Salary Benchmarks
 - ICT sector
-[![Tech Jobs]({{site.baseurl}}/assets/images/2025/2025_salary_benchmark_info-communication.png)]
+![Tech Jobs]({{site.baseurl}}/assets/images/2025/2025_salary_benchmark_info-communication.png)
+- Banking and Fin sector
+![Tech Jobs]({{site.baseurl}}/assets/images/2025/2025_salary_benchmark_banking.png)
+- Insurance sector
+![Tech Jobs]({{site.baseurl}}/assets/images/2025/2025_salary_benchmark_insurance.png)
+- Fund Management sector
+![Tech Jobs]({{site.baseurl}}/assets/images/2025/2025_salary_benchmark_fund.png)
+- Public sector
+![Tech Jobs]({{site.baseurl}}/assets/images/2025/2025_salary_benchmark_public.png)
+- All sector 
+![Tech Jobs]({{site.baseurl}}/assets/images/2025/2025_salary_heatmap.png)
+
 
 ## Tech Communities
 <!-- - [Singapore Tech Forum](https://t.me/SGTechCommunity) -->
